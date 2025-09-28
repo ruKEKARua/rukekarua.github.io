@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Minecraft Rus';
+    src: url('fonts/minecraft.ttf');
+}
+
+body {
+    background-color: rgb(36, 45, 170);
+    color: azure;
+
+    font-family: "Minecraft Rus";
+
+    
+}
