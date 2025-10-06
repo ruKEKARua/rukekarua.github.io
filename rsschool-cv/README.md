@@ -1,1 +1,1 @@
-[Сайт](https://ruKEKARua.github.io/rsschool-cv/cv)
+[Сайт](https://rukekarua.github.io/index.html)
