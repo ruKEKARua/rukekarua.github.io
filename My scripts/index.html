@@ -1,0 +1,142 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <title>Мои скрипты</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <h1>Здесь хранятся мои скрипты</h1>
+
+    <main>
+
+        <section class="scripts">
+            <div class="script">01.01.2000
+                <details> 
+                    <pre> 
+    function
+        const positionLine = document.querySelectorAll('._table-row-selected_1ptcb_109');
+        const enterEvent = new KeyboardEvent('keyup', {
+            key: 'Enter',
+            code: 'Enter',
+            keyCode: 13,
+            which: 13,
+            bubbles: true
+        });
+        positionLine.forEach((element) => {
+        const datesDivs = element.querySelector('._datepicker__input-group_lqwkk_219');
+        datesDivs.querySelector('input').value = '01.01.2000';
+        datesDivs.querySelector('input').dispatchEvent(enterEvent);
+    })
+                        
+                    </pre>
+                </details>
+            </div>
+            <div class="script">промокоды<br>создаёт блок с промокодами на странице уведомлений в едином окне, которые можно отправить в чат клиенту
+                <details>
+                    <pre> 
+    function prom () {
+        const table = document.querySelectorAll('._table-tbody_1r86o_136')[0].<br>        querySelectorAll('._table-row_1r86o_29');
+        let text = ['Вам доступны следующие промокоды:'];
+        table.forEach((element) => {
+            text.push(`${element.querySelector('td:nth-child(3)').textContent} — <br>            на ${element.querySelector('td:nth-child(4)').textContent.slice(-3, -1)} % <br>            действует до ${element.querySelector('td:nth-child(2)').textContent} включительно`);
+        });
+        const newDiv = document.createElement('div');
+        newDiv.className = 'text-block';
+        newDiv.style = '
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            max-width: 700px; 
+            word-wrap: break-word; 
+            overflow-wrap: break-word;';
+        document.querySelectorAll('._table-tbody_1r86o_136')[0].appendChild(newDiv);text.forEach((element) => <br>              {
+          const newP = document.createElement('p');
+          document.querySelectorAll('._table-tbody_1r86o_136')[0].querySelector('.text-block').<br>          appendChild(newP);newP.textContent += element;
+        });
+    }
+
+
+                        
+                    </pre>
+                </details>
+            </div>
+            <div class="script"> за что вернули деньги <br> создаёт блок с позициями из заказа, который можно отправить в чат клиенту
+                применяется на открытой вкладке с возвращёнными позициями
+                <details> 
+                    <pre> 
+    function vozvrat () {
+        const table = document.querySelectorAll('._table-tbody_1r86o_136')[1].querySelectorAll('._table-row_1r86o_29');
+        let text = ['Вернули деньги за следующие товары:'];  table.forEach((element) => {
+          text.push(`"${element.querySelector('.return-cart-column-name').textContent}" ${element.querySelector('td:nth-child(4)').textContent} ${element.querySelector('td:nth-child(5)').textContent} — ${element.querySelector('td:nth-child(7)').textContent};`);
+        });
+        const newDiv = document.createElement('div');
+        newDiv.className = 'text-block';
+        newDiv.style = 'padding: 10px;margin: 5px 0;border: 1px solid #ccc;background-color: #f9f9f9;max-width: 700px; word-wrap: break-word; overflow-wrap: break-word;';
+        document.querySelectorAll('._table-wrapper_1r86o_73')[1].appendChild(newDiv);
+        text.forEach((element) => {
+          const newP = document.createElement('p');
+          document.querySelectorAll('._table-wrapper_1r86o_73')[1].querySelector('.text-block').appendChild(newP);
+          newP.textContent += element;
+        });
+    }            
+                    </pre>
+                </details>
+            </div>
+           <div class="script"> поворот фотки
+                <details> 
+                    <pre> 
+    javascript:(
+        function createButton () {    
+            degrees = 0;
+            let images = document.querySelectorAll('img');
+            const newButton = document.createElement('button');
+            images.forEach((img) => {    
+                let wrapper = document.createElement('div');    
+                wrapper.className = 'wrapper';     
+                    wrapper.style = 'display: flex;
+                    margin: 0px auto;
+                    height: 100%;
+                    background-color: rgb(14, 14, 14);';    
+                img.parentNode.insertBefore(wrapper, img);    
+                wrapper.appendChild(img);    
+                newButton.className = 'button';    
+                newButton.style = 'width: 100px;
+                    height: 100px; 
+                    display: block;
+                    -webkit-user-select: none;
+                    margin: auto 220px;
+                    background-color: hsl(0, 0%, 90%); 
+                    transition: background-color 300ms;
+                    cursor: pointer;';    
+                newButton.addEventListener('click', function () {        
+                    degrees+=45;         
+                    const image = document.querySelector('img');            
+                    image.style = '';            
+                    image.style.display = 'block';        
+                    image.style.margin = 'auto';            
+                    image.style.cursor = 'zoom-in';            
+                    image.style.backgroundСolor = 'hsl(0, 0%, 90%)';           
+                    image.style.transition = 'background-color(300ms)';            
+                    image.style.transform = `rotate(${degrees}deg)`;    
+                });    
+                newButton.textContent = 'Повернуть';    
+                wrapper.appendChild(newButton);    
+            });    
+        })();
+                </pre>
+                </details>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
