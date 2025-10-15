@@ -1,0 +1,103 @@
+.forum {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9D8665;
+}
+
+a:active {
+    color: #7E6C51;
+}
+
+header {
+
+    width: 1920px;
+    height: 150px;
+
+    background-color: black;
+    color: white;
+
+}
+
+header section {
+    
+    display: flex;
+    flex-direction: row;
+
+    width: 1440px;
+    height: 150px;
+
+    padding-left: 240px;
+
+}
+
+.logo {
+
+    display: grid;
+    grid-template-columns: 49px 125px;
+
+    font-size: 28px;
+    font-weight: 400;
+
+    width: 199px;
+    height: 33px;
+    padding-top: 62px;
+
+}
+
+.logo p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.navigation {
+
+    width: 775px;
+    height: 26px;
+
+    font-size: 22px;
+    font-weight: 200;
+
+    padding-top: 62px;
+    padding-left: 665px;
+
+}
+
+nav {
+
+    display: grid;
+    grid-template-columns: 85px 84px 63px 84px 62px 102px;
+    grid-gap: 20px;
+
+}
+
+nav a {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
