@@ -1,7 +1,11 @@
+/* ШРИФТЫ */
+
 .forum {
   font-family: "Forum", serif;
   font-weight: 400;
   font-style: normal;
+
+  margin: 0;
 }
 
 .roboto {
@@ -11,7 +15,13 @@
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
+
+  margin: 0;
 }
+
+/* ШРИФТЫ */
+
+/* БАЗОВЫЕ СТИЛИ САЙТА */
 
 body {
     padding: 0;
@@ -31,6 +41,11 @@ a:active {
     color: #7E6C51;
 }
 
+/* БАЗОВЫЕ СТИЛИ САЙТА */
+
+
+/* HEADER */
+
 header {
 
     width: 1920px;
@@ -41,13 +56,13 @@ header {
 
 }
 
-header section {
+header .header_wrapper {
     
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     width: 1440px;
-    height: 150px;
 
     padding-left: 240px;
 
@@ -55,8 +70,11 @@ header section {
 
 .logo {
 
-    display: grid;
-    grid-template-columns: 49px 125px;
+    display: flex;
+    flex-direction: row;
+
+    
+    gap: 25px;
 
     font-size: 28px;
     font-weight: 400;
@@ -67,36 +85,271 @@ header section {
 
 }
 
-.logo p {
-    margin: 0;
-    margin-left: 10px;
+.logo svg {
+    width: 49px;
+    height: 26px;
 }
 
-.navigation {
+.logo p {
+
+    font-size: 28px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    width: 125px;
+    height: 31px;
+
+    margin: 0;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
 
     width: 775px;
     height: 26px;
 
-    font-size: 22px;
+    padding: 65px 0 0 0;
+    margin: 0;
+
+
     font-weight: 200;
+    font-size: 22px;
 
-    padding-top: 62px;
-    padding-left: 665px;
+    line-height: 100%;
+    letter-spacing: 2px;
 
-}
-
-nav {
-
-    display: grid;
-    grid-template-columns: 85px 84px 63px 84px 62px 102px;
-    grid-gap: 20px;
+    list-style-type: none;
 
 }
 
-nav a {
-    width: 100%;
+.navigation a {text-align: center;}
+
+/* HEADER */
+
+/* СЕКЦИЯ 1 - WELCOME */
+
+.welcome {
+
+    width: 1920px;
+    height: 810px;
+
+    color: white;
+
+    background-color: #030303;
+
+    background-image: url(/rsschool-cv/Museum/assets/img/welcome-slider/1.jpg);
+    background-repeat: no-repeat;
+    background-size: 1000px 750px;
+    background-position: 680px 0;
+
+}
+
+.welcome_wrapper {
+
+    width: 1440px;
+    height: 810px;
+
+    padding: 32px 240px 0 240px;
+}
+
+.gradient_monalisa {
+
+    display: block;
+    position: absolute;
+    top: 118px;
+    z-index: 1;
+
+    width: 1000px;
+    height: 750px;
+
+    background: #000000;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 23%);
+    background-position: 440px;
+
+    padding: 32px 240px 0 240px;
+
+}
+
+.welcome .text {
+    display: block;
+    position: relative;
+    width: 600px;
+    height: 388px;
+
+    margin: 120px 0 0 0;
+
+    z-index: 2;
+}
+
+.welcome .title {
+
+    height: 180px;
+
+    text-transform: uppercase;
+    font-size: 80px;
+
+    line-height: 90px;
+    letter-spacing: 5px;
+
+}
+
+.welcome .text p {
+
+    margin-top: 25px;
+
+    font-weight: 300;
+    font-size: 28px;
+
+    line-height: 100%;
+    letter-spacing: 2px;
+
+}
+
+.welcome .button {
+
+    width: 360px;
+    height: 75px;
+
+    margin-top: 75px;
+
+    font-weight: 300;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 2px;
     text-align: center;
+    align-content: center;
+
+    background-color: #710707;
+    border-radius: 10px;
+
 }
+
+.welcome .button a {
+    display: block;
+
+    align-content: center;
+    width: 360px;
+    height: 75px;
+}
+
+
+.pagination {
+
+    display: block;
+    position: relative;
+    z-index: 3;
+
+    width: 600px;
+    height: 120px;
+
+    background-color: #000000;
+
+    top: 150px;
+    left: 840px;
+    
+
+}
+
+.pagination_wrapper {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+    font-weight: 400;
+    font-size: 22px;
+
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+
+    padding-top: 40px;
+
+
+}
+
+.pagination .numbers  {
+
+    position: relative;
+    left: 8px;
+
+    width: 76px;
+    height: 40px;
+
+
+
+}
+
+.pagination .numbers p {
+    padding: 0;
+    margin: 0;
+}
+
+
+.pagination .numbers div {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.pagination .pages {
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 180px;
+    height: 16px;
+
+}
+
+.pagination .page {
+
+    position: relative;
+    right: 3px;
+
+    width:  16px;
+    height: 16px;
+
+    background-color: rgba(255, 255, 255, 1);
+
+    
+}
+
+.pagination .active {
+
+    background-color: rgba(210, 177, 131, 1);
+
+}
+
+.pagination .change_page {
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    right: 10px;
+
+    width: 80px;
+    height: 8px;
+
+}
+
+.pagination .arrow_left, .pagination .arrow_right {
+    cursor: pointer;
+}
+
+
+
+
+
+/* СЕКЦИЯ 1 - WELCOME */
+
+
 
 
 
