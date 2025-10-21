@@ -1,3 +1,7 @@
+main {
+    height: 8717px;
+}
+
 /* ШРИФТЫ */
 
 .forum {
@@ -39,6 +43,11 @@ a:hover {
 
 a:active {
     color: #7E6C51;
+}
+
+p, h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
 }
 
 /* БАЗОВЫЕ СТИЛИ САЙТА */
@@ -235,6 +244,15 @@ header .header_wrapper {
     height: 75px;
 }
 
+.welcome .button:hover {
+    
+    background-color: rgba(157, 134, 101, 1);
+}
+
+.welcome .button a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
 
 .pagination {
 
@@ -320,6 +338,15 @@ header .header_wrapper {
     
 }
 
+.pagination a {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+.pagination a:hover {
+    background-color: rgba(157, 134, 101, 1);
+}
+
 .pagination .active {
 
     background-color: rgba(210, 177, 131, 1);
@@ -339,6 +366,10 @@ header .header_wrapper {
 
 }
 
+.arrow_left svg:hover {
+    fill: rgba(157, 134, 101, 1);
+}
+
 .pagination .arrow_left, .pagination .arrow_right {
     cursor: pointer;
 }
@@ -351,6 +382,109 @@ header .header_wrapper {
 
 
 
+/* СЕКЦИЯ 2 - VISITING */
+
+.visiting {
+    width: 1440px;
+    margin-top: 75px;
+    padding: 0 240px 0 240px;
+
+}
+
+.visiting_wrapper {
+    width: 1440px;
+    height: 1116px;
+}
+
+.visiting .title {
+    width: 1440px;
+    height: 115px;
+
+    border-bottom: 3px solid rgba(113, 7, 7, 1);
+}
+
+.visiting h2 {
+    font-weight: 400;
+    font-size: 80px;
+
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.tours {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 75px 60px;
+
+    margin-top: 75px;
+
+    height: 923px;
+
+}
+
+.tour {
+    width: 440px;
+    height: 424px;
+}
+
+.tour_title {
+
+    width: 300px;
+    height: 45px;
+
+    border-bottom: 3px solid rgba(113, 7, 7, 1);
+
+    margin: 25px 0 10px 0;
+
+    font-weight: 400;
+    font-size: 32px;
+
+    line-height: 100%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+}
+
+.tour .type {
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-content: center;
+    
+
+    width: 300px;
+    height: 70px;
+
+    font-weight: 200;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.tour_type {
+    width: 165px;
+    height: 26px;
+
+
+    margin: 0px 0 11px 0;
+}
+
+.view_type {
+    width: 240px;
+    height: 21px;
 
 
 
+    font-weight: 200;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
