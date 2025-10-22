@@ -50,6 +50,24 @@ p, h1, h2, h3, h4 {
     margin: 0;
 }
 
+h2 {
+    font-family: Forum;
+    font-weight: 400;
+    font-size: 80px;
+
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+video {
+
+    width: 452px;
+    height: 254px;
+
+}
+
 /* БАЗОВЫЕ СТИЛИ САЙТА */
 
 
@@ -196,12 +214,6 @@ header .header_wrapper {
 
     height: 180px;
 
-    text-transform: uppercase;
-    font-size: 80px;
-
-    line-height: 90px;
-    letter-spacing: 5px;
-
 }
 
 .welcome .text p {
@@ -343,7 +355,7 @@ header .header_wrapper {
     width: 16px;
     height: 16px;
 }
-.pagination a:hover {
+.pagination .active:hover {
     background-color: rgba(157, 134, 101, 1);
 }
 
@@ -401,16 +413,9 @@ header .header_wrapper {
     height: 115px;
 
     border-bottom: 3px solid rgba(113, 7, 7, 1);
+    color: rgba(157, 134, 101, 1);
 }
 
-.visiting h2 {
-    font-weight: 400;
-    font-size: 80px;
-
-    line-height: 90px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
 
 .tours {
 
@@ -527,13 +532,6 @@ header .header_wrapper {
 
     width: 660px;
     height: 116px;
-    
-    font-weight: 400;
-    font-size: 80px;
-
-    line-height: 90px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
 
     border-bottom: 3px solid rgba(113, 7, 7, 1);
 
@@ -627,3 +625,205 @@ header .header_wrapper {
 }
 
 /* СЕКЦИЯ 3 - EXPLORE */
+
+
+/* СЕКЦИЯ 4 - VIDEO JOURNEY */
+
+
+.video_journey {
+
+    width: 1440px;
+    height: 865px;
+    padding: 0 240px 0 240px;
+    margin-top: 75px;
+
+}
+
+.video_journey_wrapper {
+
+    height: 1246px;
+
+}
+
+.video_journey .head_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-bottom: 69px;
+}
+
+.video_journey .head_wrapper h2 {
+
+    width: 670px;
+    height: 90px;
+
+    color: rgba(157, 134, 101, 1);
+
+}
+
+.video_journey .head_wrapper p {
+
+    display: flex;
+
+    width: 720px;
+    height: 90px;
+
+    font-weight: 300;
+    font-size: 22px;
+
+    line-height: 38.5px;
+    letter-spacing: 0%;
+    
+    padding-top: 6px;
+
+}
+
+
+.video_block {
+
+    height: 1029px;
+
+}
+
+.video_block .main_video  video{
+
+    width: 1440px; 
+    height: 650px; 
+    object-fit: fill;
+
+
+
+}
+
+.control_panel {
+
+    height: 85px;
+    background-color: black;
+
+}
+
+
+.youtube_videos {
+
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+
+    margin-top: 40px;
+
+
+    height: 254px;
+
+}
+
+.youtube_video {
+    width: 452px;
+    height: 254px;
+}
+
+.video {
+    
+    position: relative;
+    z-index: 0;
+
+    bottom: 40px;
+
+    width: 452px;
+    height: 254px;
+}
+
+.play_button {
+
+    position: relative;
+    bottom: 151;
+    left: 192;
+
+}
+
+.video_title {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+
+    position: relative;
+    top: 15;
+    left: 10;
+    z-index: 1;
+
+    width: 406px;
+    height: 40px;
+}
+
+.video_title .avatar {
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url(/rsschool-cv/Museum/assets/img/avatar.jpg);
+    background-color: #ffffff00;
+    background-repeat: no-repeat;
+    background-size: 50px 40px;
+    background-position: -5px;
+    border-radius: 50%;
+
+}
+
+.video_name {
+    display: flex;
+    justify-self: flex-start;
+
+    width: 330px;
+    height: 39px;
+
+    color: rgba(255, 255, 255, 1);
+
+    margin: 0 23px 0 10px;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 38.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+
+
+.dots { 
+
+    padding: 13px 0 0 0;
+
+}
+
+
+.video_block .pages {
+
+    width: 1440px;
+    height: 12px;
+
+}
+
+.video_block .pages_wrapper {
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 40px auto 0 auto;
+
+    width: 200px;
+    height: 12px;
+
+}
+
+
+
+
+/* СЕКЦИЯ 4 - VIDEO JOURNEY */
+
+
+
+
+
