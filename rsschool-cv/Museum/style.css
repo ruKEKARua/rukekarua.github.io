@@ -2,6 +2,10 @@ main {
     height: 8717px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ШРИФТЫ */
 
 .forum {
@@ -159,7 +163,11 @@ header .header_wrapper {
 
 }
 
-.navigation a {text-align: center;}
+.navigation a {
+    text-align: center;
+
+    
+}
 
 /* HEADER */
 
@@ -656,7 +664,7 @@ header .header_wrapper {
 .video_journey {
 
     width: 100%;
-    height: 865px;
+    height: 1246px;
 
     margin-top: 75px;
 
@@ -844,6 +852,16 @@ header .header_wrapper {
 
 }
 
+.video_block .pages_wrapper circle, .video_block .pages_wrapper path {
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.video_block .pages_wrapper circle:hover {
+    transition: 0.2s;
+    fill: rgba(113, 7, 7, 1);
+
+}
 
 
 
@@ -851,5 +869,101 @@ header .header_wrapper {
 
 
 
+/* СЕКЦИЯ 5 - ART GALLERY */
+
+
+
+.art_gallery {
+
+    width: 100%;
+    height: 2200px;
+
+    background-color: rgba(3, 3, 3, 1);
+
+    margin-top: 75px;
+
+    color: white;
+}
+
+.art_gallery_wrapper {
+
+    width: 1440px;
+    height: 2125px;
+    margin: 0 auto;
+
+}
+
+.art_gallery .title {
+
+    padding: 75px 0;
+
+}
+
+
+.arts {
+    display: flex;
+    flex-direction: row;
+
+    height: 1960px;
+
+    overflow: hidden;
+
+    position: relative;
+    z-index: 0;
+}
+
+.arts .art_block_1, .art_block_2, .art_block_3 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.art_block_1, .art_block_3 {
+
+    padding-top: 50px;
+
+}
+
+.art_block_2 {
+
+    margin: 0 36px;
+
+}
+
+.art_image {
+
+    width: 456px;
+    
+
+    background: no-repeat 100% 100%;
+
+    background-image: url(/rsschool-cv/Museum/assets/img/galery/galery1.jpg);
+}
+
+
+.gradient_art {
+
+    display: block;
+    position: absolute;
+    top: 865px;
+    left: 345px;
+    z-index: 1;
+
+    width: 750px;
+    height: 1440px;
+
+    background: #000000;
+    background: linear-gradient(90deg,rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%);
+ 
+
+    transform: rotate(-90deg);
+    
+}
+
+
+
+/* СЕКЦИЯ 5 - ART GALLERY */
 
 
