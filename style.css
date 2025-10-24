@@ -194,7 +194,7 @@ header .header_wrapper {
     margin: 0 auto;
 
     padding: 32px 240px 0 240px;
-    background-image: url(/rsschool-cv/Museum/assets/img/welcome-slider/1.jpg);
+    background-image: url(/assets/img/welcome-slider/1.jpg);
     background-repeat: no-repeat;
     background-size: 1000px 750px;
     background-position: 680px 0;
@@ -623,7 +623,7 @@ header .header_wrapper {
     width: 440px;
     height: 700px;
 
-    background: no-repeat url(/rsschool-cv/Museum/assets/img/explore-slider/before.jpg); 
+    background: no-repeat url(/assets/img/explore-slider/before.jpg); 
 
     position: relative;
     z-index: 1;
@@ -633,7 +633,7 @@ header .header_wrapper {
     width: 720px;
     height: 700px;
 
-    background: no-repeat url(/rsschool-cv/Museum/assets/img/explore-slider/after.jpg); 
+    background: no-repeat url(/assets/img/explore-slider/after.jpg); 
 
     position: relative;
     z-index: 0;
@@ -796,7 +796,7 @@ header .header_wrapper {
     width: 40px;
     height: 40px;
 
-    background-image: url(/rsschool-cv/Museum/assets/img/avatar.jpg);
+    background-image: url(/assets/img/avatar.jpg);
     background-color: #ffffff00;
     background-repeat: no-repeat;
     background-size: 50px 40px;
@@ -939,7 +939,7 @@ header .header_wrapper {
 
     background: no-repeat 100% 100%;
 
-    background-image: url(/rsschool-cv/Museum/assets/img/galery/galery1.jpg);
+    background-image: url(/assets/img/galery/galery1.jpg);
 }
 
 
