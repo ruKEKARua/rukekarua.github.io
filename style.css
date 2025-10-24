@@ -991,6 +991,119 @@ header .header_wrapper {
 }
 
 
+.tickets h2 {
+
+    width: 100%;
+    height: 115px;
+
+    margin-bottom: 75px;
+
+    color: rgba(157, 134, 101, 1);
+
+    border-bottom: 3px solid rgba(113, 7, 7, 1);
+
+}
+
+.tickets .block {
+
+    display: flex;
+
+
+    height: 550px;
+
+
+    font-weight: 300;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.tickets .image {
+
+    width: 720px;
+    height: 550px;    
+
+}
+
+.tickets .ticket_type {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 420px;
+
+    margin: 0 240px 0 60px;
+
+    font-weight: 300;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+
+
+}
+
+.tickets .ticket_type p {
+
+    width: 156px;
+    height: 33px;
+
+
+    font-weight: 700;
+    font-size: 28px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    margin-bottom: 57px;
+
+}
+
+.tickets .ticket_type .inputs {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    height: 100%;
+
+}
+
+.tickets .ticket_type .inputs div {
+
+    width: 270px;
+    height: 26px;
+
+}
+
+.tickets .ticket_type .inputs input {
+
+    width: 17px;
+    height: 17px;
+
+    padding: 0;
+    margin: 0;
+
+}
+
+.tickets .ticket_type .inputs label {
+
+    padding-left: 17px;
+    
+
+}
+
+.tickets .amount {
+
+    width: 150px;
+    height: 341px;
+
+    text-align: right;
+
+}
 
 
 /* СЕКЦИЯ 5 - TICKETS */
