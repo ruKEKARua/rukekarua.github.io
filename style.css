@@ -967,3 +967,30 @@ header .header_wrapper {
 /* СЕКЦИЯ 5 - ART GALLERY */
 
 
+
+/* СЕКЦИЯ 5 - TICKETS */
+
+
+.tickets {
+
+
+    width: 100%;
+    height: 893px;
+
+}
+
+
+.tickets_wrapper {
+
+    width: 1440px;
+    height: 743px;
+
+    margin: 0 auto;
+    padding: 75px 0;
+
+}
+
+
+
+
+/* СЕКЦИЯ 5 - TICKETS */
