@@ -606,40 +606,56 @@
                             <p>Ticket Type</p>
 
                             <div class="inputs">
-                                <div><input type="radio" name="Permanent exhibition" id=""> <label> Permanent exhibition </label></div>
-                                <div><input type="radio" name="Temporary exhibition" id=""> <label> Temporary exhibition </label></div>
-                                <div><input type="radio" name="Combined Admission" id=""> <label> Combined Admission </label></div>
+                                <label><input type="radio" name="radio" id="" checked>Permanent exhibition</label>
+                                <label><input type="radio" name="radio" id="">Temporary exhibition</label>
+                                <label><input type="radio" name="radio" id="">Combined Admission</label>
                             </div>
 
                         </div>
 
                         <div class="amount">
 
-                            <p>Amount</p>
+                            <p class="head_text roboto">Amount</p>
 
                             <div>
                                 
                                 
-                                <div class="ticket_basic">
+                                <div class="ticket_basic roboto">
                                     
-                                    <label>Basic 18+</label>
+                                    <p class="roboto">Basic 18+</p>
 
-                                    <input type="button" value="-">
-                                    <input type="number" value="1" name="count_basic" id="">
-                                    <input type="button" value="+">
+                                    <div class="count_button">
+
+                                        <div class="change_button"><input type="button" value="–" id="minus_button_basic" class="roboto"></div>
+                                        <div class="counter roboto"><input type="number" value="1" name="count_basic" id="" class="roboto"></div>
+                                        <div class="change_button"><input type="button" value="+" id="plus_button_basic" class="roboto"></div>
+
+                                    </div>
 
                                 </div>
 
                                 <div class="ticket_senior">
                                     
-                                    <label>Senior 65+</label>
+                                    <p class="roboto">Senior 65+</p>
 
-                                    <input type="button" value="-">
-                                    <input type="number" value="1" name="count_senior" id="">
-                                    <input type="button" value="+">
+                                    <div class="count_button roboto">
+
+                                        <div class="change_button"><input type="button" value="–"  id="minus_button_senior" class="roboto"></div>
+                                        <div class="counter roboto"><input type="number" value="1" name="count_senior" id="" class="roboto"></div>
+                                        <div class="change_button"><input type="button" value="+" id="plus_button_senior" class="roboto"></div>
+
+                                    </div>
 
                                 </div>
-                                
+
+                                <div class="total_price roboto">
+
+                                    <p>Total €220</p>
+
+                                </div>
+
+                                <input type="submit" value="Buy Now" class="submit_button_block roboto">
+
                             </div>
 
                         </div>
