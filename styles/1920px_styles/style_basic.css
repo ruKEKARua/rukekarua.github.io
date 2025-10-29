@@ -1,0 +1,108 @@
+
+@import url("style_header.css");
+@import url("style_section_welcome.css");
+@import url("style_section_visiting.css");
+@import url("style_section_explore.css");
+@import url("style_section_video.css");
+@import url("style_section_gallery.css");
+@import url("style_section_tickets.css");
+@import url("style_section_contacts.css");
+@import url("style_footer.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ШРИФТЫ */
+
+.forum {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+}
+
+/* ШРИФТЫ */
+
+/* БАЗОВЫЕ СТИЛИ САЙТА */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+
+    transition: 0.5s;
+
+    font-weight: 200;
+}
+
+a:hover {
+    color: #9D8665;
+
+    transition: 0.5s;
+}
+
+a:active {
+    color: #7E6C51;
+}
+
+p, h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: none;
+    background: none;
+    outline: none;
+    appearance: textfield; 
+}
+
+h2 {
+    font-family: Forum;
+    font-weight: 400;
+    font-size: 80px;
+
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+video {
+
+    width: 452px;
+    height: 254px;
+
+}
+
+.main_wrapper {
+
+    width: 100%;
+
+}
+
+ul {
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+/* БАЗОВЫЕ СТИЛИ САЙТА */
+

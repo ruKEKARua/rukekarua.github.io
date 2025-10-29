@@ -1,0 +1,335 @@
+
+.video_journey {
+
+    width: 100%;
+    height: 1246px;
+
+    margin-top: 75px;
+
+}
+
+.video_journey_wrapper {
+
+    width: 1440px;
+    height: 1246px;
+
+    margin: 0 auto;
+
+}
+
+.video_journey .head_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-bottom: 69px;
+}
+
+.video_journey .head_wrapper h2 {
+
+    width: 670px;
+    height: 90px;
+
+    color: rgba(157, 134, 101, 1);
+
+}
+
+.video_journey .head_wrapper p {
+
+    display: flex;
+
+    width: 720px;
+    height: 90px;
+
+    font-weight: 300;
+    font-size: 22px;
+
+    line-height: 38.5px;
+    letter-spacing: 0%;
+    
+    padding-top: 6px;
+
+}
+
+
+.video_block {
+
+    height: 1029px;
+
+}
+
+.video_block .main_video  video{
+
+    width: 1440px; 
+    height: 650px; 
+    object-fit: fill;
+
+}
+
+.control_panel {
+
+    height: 85px;
+    background-color: black;
+
+}
+
+.control_panel .control_panel_wrapper {
+
+    display: flex;
+
+    
+    height: 85px;
+
+    position: relative;
+    left: 0px;
+    top:  -220px;
+    right: 0px;
+    bottom: 0;
+
+}
+
+.control_panel .button_play_by_panel {
+
+    width: 30px;
+    height: 30px;
+
+    margin: 27px 30px;
+    cursor: pointer;
+
+}
+
+.control_panel .timeline_block {
+
+    display: flex;
+    align-items: center;
+
+    width: 992px;
+
+}
+
+.control_panel .timeline_block .timeline {
+
+    width: 929px;
+    height: 8px;
+
+    margin-left: 13px;
+
+    background: linear-gradient(90deg, rgb(113, 7, 7), rgb(196, 196, 196) 1%);
+
+}
+
+.control_panel .timeline_block .timeline svg, .control_panel .volume_block .volume_line svg {
+
+    position: relative;
+    top: -4px;
+
+    cursor: pointer;
+
+}
+
+.control_panel .volume_block {
+
+    display: flex;
+    align-items: center;
+
+    width: 243px;
+
+}
+
+.control_panel .volume_block svg {
+    cursor: pointer;
+}
+
+.control_panel .volume_block .volume_line {
+
+    width: 155px;
+    height: 8px;
+
+    margin-left: 50px;
+
+    background: linear-gradient(90deg, rgb(113, 7, 7) 38%, rgb(196, 196, 196) 1%);
+
+}
+
+.control_panel .volume_block .volume_line svg {
+
+    left: 38%;
+
+}
+
+.control_panel .fullscreen {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 95px;
+    margin: 0 0 0 20px;
+
+}
+
+
+
+.control_panel .button_play {
+
+    width: 220px;
+    height: 220px;
+
+    position: relative;
+
+    left: 610px;
+    top: -435px;
+    right: 0px;
+    bottom: 0px;
+
+    cursor: pointer;
+
+}
+
+.control_panel .button_play svg:nth-child(1) {
+
+    position: relative;
+    left: 77px;
+    top: 50px;
+    right: 0px;
+    bottom: 0px;
+
+}
+.control_panel .button_play svg:nth-child(2) {
+
+    position: relative;
+    left: 0px;
+    top: -121px;
+    right: 0px;
+    bottom: 0px;
+
+}
+
+
+
+.youtube_videos {
+
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+
+    margin-top: 40px;
+
+
+    height: 254px;
+
+}
+
+.youtube_video {
+    width: 452px;
+    height: 254px;
+}
+
+.video {
+    
+    position: relative;
+    z-index: 0;
+
+    bottom: 40px;
+
+    width: 452px;
+    height: 254px;
+}
+
+.youtube_play_button {
+
+    position: relative;
+    bottom: 151;
+    left: 192;
+
+}
+
+.video_title {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+
+    position: relative;
+    top: 15;
+    left: 10;
+    z-index: 1;
+
+    width: 406px;
+    height: 40px;
+}
+
+.video_title .avatar {
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url(/assets/img/avatar.jpg);
+    background-color: #ffffff00;
+    background-repeat: no-repeat;
+    background-size: 50px 40px;
+    background-position: -5px;
+    border-radius: 50%;
+
+}
+
+.video_name {
+    display: flex;
+    justify-self: flex-start;
+
+    width: 330px;
+    height: 39px;
+
+    color: rgba(255, 255, 255, 1);
+
+    margin: 0 23px 0 10px;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 38.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+
+
+.dots { 
+
+    padding: 13px 0 0 0;
+
+}
+
+
+.video_block .pages {
+
+    width: 1440px;
+    height: 12px;
+
+}
+
+.video_block .pages_wrapper {
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 40px auto 0 auto;
+
+    width: 200px;
+    height: 12px;
+
+}
+
+.video_block .pages_wrapper circle, .video_block .pages_wrapper path {
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.video_block .pages_wrapper circle:hover {
+    transition: 0.2s;
+    fill: rgba(113, 7, 7, 1);
+
+}
+
+
