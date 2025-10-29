@@ -73,6 +73,34 @@
 
 }
 
+.control_panel .control_panel_wrapper {
+
+    display: flex;
+
+    
+    height: 85px;
+
+    position: relative;
+    left: 0px;
+    top:  -220px;
+    right: 0px;
+    bottom: 0;
+
+}
+
+.control_panel .button_play_by_panel {
+
+    width: 30px;
+    height: 30px;
+
+    margin: 27px 30px;
+    cursor: pointer;
+
+}
+
+
+
+
 .control_panel .button_play {
 
     width: 220px;
@@ -84,6 +112,8 @@
     top: -435px;
     right: 0px;
     bottom: 0px;
+
+    cursor: pointer;
 
 }
 
