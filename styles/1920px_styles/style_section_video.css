@@ -98,6 +98,45 @@
 
 }
 
+.control_panel .timeline_block {
+
+    display: flex;
+    align-items: center;
+
+    width: 992px;
+
+}
+
+.control_panel .timeline_block .timeline {
+
+    width: 929px;
+    height: 8px;
+
+    margin-left: 13px;
+
+    background: linear-gradient(90deg, rgb(113, 7, 7), rgb(196, 196, 196) 1%);
+
+}
+
+.control_panel .timeline_block .timeline svg {
+
+    position: relative;
+    top: -4px;
+
+}
+
+.control_panel .volume_block {
+
+    width: 243px;
+
+}
+
+.control_panel .fullscreen {
+
+    width: 95px;
+    margin: 0 0 0 20px;
+
+}
 
 
 
