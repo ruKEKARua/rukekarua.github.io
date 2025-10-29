@@ -5,13 +5,15 @@
     
     <title>Музей</title>
 
+    <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
+
     <link type="Image/x-icon" href="/assets/favicon.ico" rel="icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/1920px_styles/style_basic.css">
+
 </head>
 <body>
     
@@ -293,6 +295,7 @@
 
             </section>
 
+
             <section class="video_journey" id="video_journey">
 
                 <div class="video_journey_wrapper">
@@ -313,7 +316,7 @@
 
                                 type="mp4" 
                                 src="/assets/video/video0.mp4"
-                                controls
+                                
                                 poster="/assets/video/poster0.jpg"
                                 preload
 
@@ -321,7 +324,18 @@
 
                             <div class="control_panel">
 
-                                <!--заготовка под жс-->
+                                <div class="button_play">
+
+                                    <svg width="92" height="121" viewBox="0 0 92 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M91.4262 60.0881L0 0C0.1185 90.5861 0 46.1379 0 120.176L91.4262 60.0881Z" fill="white"/>
+                                    </svg>
+
+                                    <svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M110 8.89168C130.003 8.88778 149.558 14.816 166.191 25.9266C182.825 37.0372 195.79 52.831 203.446 71.3106C211.103 89.7901 213.107 110.125 209.206 129.744C205.304 149.363 195.672 167.384 181.528 181.528C167.384 195.672 149.363 205.304 129.744 209.206C110.125 213.107 89.7901 211.103 71.3106 203.446C52.8311 195.79 37.0372 182.825 25.9266 166.191C14.816 149.558 8.88783 130.003 8.89174 110C8.92833 83.1956 19.5925 57.4996 38.546 38.546C57.4996 19.5925 83.1956 8.92828 110 8.89168ZM110 0C88.2441 0 66.9767 6.45139 48.8873 18.5383C30.7979 30.6253 16.6989 47.805 8.37331 67.9048C0.0476618 88.0047 -2.1307 110.122 2.11367 131.46C6.35805 152.798 16.8345 172.398 32.2183 187.782C47.602 203.166 67.2022 213.642 88.5401 217.886C109.878 222.131 131.995 219.952 152.095 211.627C172.195 203.301 189.375 189.202 201.462 171.113C213.549 153.023 220 131.756 220 110C220 80.8262 208.411 52.8473 187.782 32.2183C167.153 11.5893 139.174 0 110 0Z" fill="white"/>
+                                    </svg>
+
+                                </div>
+
 
                             </div>
 
@@ -357,7 +371,7 @@
                                     preload
 
                                 ></video>
-                                <svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="play_button">
+                                <svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="youtube_play_button">
                                     <g clip-path="url(#clip0_1_2010)">
                                         <path d="M66.599 7.51079C65.8151 4.57394 63.5184 2.25899 60.6058 1.46816C55.2845 0 33.9993 0 33.9993 0C33.9993 0 12.7147 0 7.39337 1.4122C4.53688 2.2025 2.18413 4.57447 1.40023 7.51079C0 12.875 0 24 0 24C0 24 0 35.1809 1.40023 40.4892C2.18465 43.4255 4.48085 45.741 7.39389 46.5318C12.7707 48 33.9999 48 33.9999 48C33.9999 48 55.2845 48 60.6058 46.5878C63.5189 45.7975 65.8151 43.482 66.5995 40.5457C67.9997 35.1809 67.9997 24.0565 67.9997 24.0565C67.9997 24.0565 68.0557 12.875 66.599 7.51079Z" fill="#212121" fill-opacity="0.8"/>
                                         <path d="M27 34.4348L45 24L27 13.5652V34.4348Z" fill="white"/>
@@ -404,7 +418,7 @@
                                 
                                 ></video>
                                 
-                                <svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="play_button">
+                                <svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="youtube_play_button">
                                     <g clip-path="url(#clip0_1_2010)">
                                         <path d="M66.599 7.51079C65.8151 4.57394 63.5184 2.25899 60.6058 1.46816C55.2845 0 33.9993 0 33.9993 0C33.9993 0 12.7147 0 7.39337 1.4122C4.53688 2.2025 2.18413 4.57447 1.40023 7.51079C0 12.875 0 24 0 24C0 24 0 35.1809 1.40023 40.4892C2.18465 43.4255 4.48085 45.741 7.39389 46.5318C12.7707 48 33.9999 48 33.9999 48C33.9999 48 55.2845 48 60.6058 46.5878C63.5189 45.7975 65.8151 43.482 66.5995 40.5457C67.9997 35.1809 67.9997 24.0565 67.9997 24.0565C67.9997 24.0565 68.0557 12.875 66.599 7.51079Z" fill="#212121" fill-opacity="0.8"/>
                                         <path d="M27 34.4348L45 24L27 13.5652V34.4348Z" fill="white"/>
@@ -449,7 +463,7 @@
                                     preload
                             
                                 ></video>
-                                <svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="play_button">
+                                <svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="youtube_play_button">
                                     <g clip-path="url(#clip0_1_2010)">
                                         <path d="M66.599 7.51079C65.8151 4.57394 63.5184 2.25899 60.6058 1.46816C55.2845 0 33.9993 0 33.9993 0C33.9993 0 12.7147 0 7.39337 1.4122C4.53688 2.2025 2.18413 4.57447 1.40023 7.51079C0 12.875 0 24 0 24C0 24 0 35.1809 1.40023 40.4892C2.18465 43.4255 4.48085 45.741 7.39389 46.5318C12.7707 48 33.9999 48 33.9999 48C33.9999 48 55.2845 48 60.6058 46.5878C63.5189 45.7975 65.8151 43.482 66.5995 40.5457C67.9997 35.1809 67.9997 24.0565 67.9997 24.0565C67.9997 24.0565 68.0557 12.875 66.599 7.51079Z" fill="#212121" fill-opacity="0.8"/>
                                         <path d="M27 34.4348L45 24L27 13.5652V34.4348Z" fill="white"/>
@@ -511,6 +525,7 @@
                 </div>
 
             </section>
+
 
             <section class="art_gallery" id="art_gallery">
 
@@ -597,7 +612,7 @@
 
                     <h2>Buy Tickets</h2>
 
-                    <form action="#" class="block">
+                    <form action="rukekarua.github.io" class="block">
 
                         <div class="image"><img src="/assets/img/ticket/ticket_canvas.jpg" alt="ticket canvas"></div>
 
@@ -672,6 +687,7 @@
 
             </div>
 
+
             <section class="contacts" id="contacts">
 
                 <div class="contacts_wrapper">
@@ -707,6 +723,7 @@
                 </div>
 
             </section>
+
 
 
         </div>
@@ -843,7 +860,6 @@
 
 
     </footer>
-
     <script src="/script.js"></script>
 
 </body>

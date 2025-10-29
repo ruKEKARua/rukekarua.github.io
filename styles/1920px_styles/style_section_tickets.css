@@ -1,0 +1,329 @@
+
+
+.tickets {
+
+
+    width: 100%;
+    height: 893px;
+
+}
+
+
+.tickets_wrapper {
+
+    width: 1440px;
+    height: 743px;
+
+    margin: 0 auto;
+    padding: 75px 0;
+
+}
+
+
+.tickets h2 {
+
+    width: 100%;
+    height: 115px;
+
+    margin-bottom: 75px;
+
+    color: rgba(157, 134, 101, 1);
+
+    border-bottom: 3px solid rgba(113, 7, 7, 1);
+
+}
+
+.tickets .block {
+
+    display: flex;
+
+
+    height: 550px;
+
+
+    font-weight: 300;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.tickets .image {
+
+    width: 720px;
+    height: 550px;    
+
+}
+
+.tickets .ticket_type {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 420px;
+
+    margin: 2px 240px 0 59px;
+
+    font-weight: 300;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+
+
+}
+
+.tickets .ticket_type p {
+
+    width: 156px;
+    height: 33px;
+
+
+    font-weight: 700;
+    font-size: 28px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    margin-bottom: 57px;
+
+}
+
+.tickets .ticket_type .inputs {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    height: 100%;
+
+}
+
+.tickets .ticket_type .inputs label {
+
+    cursor: pointer;
+
+}
+
+.tickets .ticket_type .inputs input {
+
+    width: 17px;
+    height: 17px;
+
+    padding: 0;
+    margin: 0 24px 0 0;
+
+    position: relative;
+
+    content: "";
+    appearance: none;
+    
+    background-image: none;
+
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.tickets .ticket_type .inputs input:checked {
+
+    content: "";
+    position: relative;
+    width: 17px;
+    height: 17px;
+
+    left: 0px;
+    top: 0px;
+    
+    background-image: url("/assets/img/ticket/Ellipse 0.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.tickets .ticket_type .inputs label {
+
+    width: 270px;
+    height: 26px;
+
+}
+
+.tickets .amount {
+
+    display: flex;
+    flex-direction: column;
+
+
+    width: 150px;
+    height: 341px;
+
+    text-align: right;
+
+    margin-top: 2px;
+
+}
+
+.tickets .amount .head_text {
+
+    font-weight: 700;
+    font-size: 28px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    margin-bottom: 30px;
+
+}
+.ticket_basic {margin-bottom: 10px;}
+.ticket_basic, .ticket_senior {
+
+    width: 150px;
+    height: 91px;
+
+    text-align: left;
+
+    font-weight: 300;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.count_button {
+
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    
+    width: 145px;
+    height: 45px;
+
+    margin-top: 15px;
+
+    border: 3px solid black;
+
+}
+
+.count_button .change_button {
+
+    width: 48px;
+    height: 45px;
+
+    
+
+}
+
+.count_button .counter {
+
+    width: 50px;
+    height: 45px;
+
+}
+
+.count_button .change_button input {
+
+    width: 50px;
+    height: 45px;
+
+    font-weight: 400;
+    font-size: 32px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+
+}
+
+#minus_button_senior, #minus_button_basic {
+    width: 40px;
+}
+
+.count_button .counter input {
+
+    width: 50px;
+    height: 45px;
+
+    font-weight: 300;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.total_price {
+
+    width: 151px;
+    height: 40px;
+
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    font-weight: 700;
+    font-size: 28px;
+    
+    line-height: 100%;
+    letter-spacing: 1.65px;
+
+
+}
+
+.submit_button_block {
+
+    position: relative;
+    bottom: 9px;
+    right: 25px;
+
+    width: 175px;
+    height: 50px;
+
+    background: #000000;
+
+    color: white;
+    
+    font-weight: 300;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 2px;
+
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+
+/* PARALLAX */
+
+
+.parallax {
+
+    width: 100%;
+    height: 400px;
+
+}
+
+.parallax_wrapper {
+
+    width: 100%;
+    height: 400px;
+
+    margin: 0 auto;
+
+    background: no-repeat;
+    background-image: url(/assets/img/parallax.jpg);
+    background-size: 100%;
+    background-position: 0 -150px;
+    background-attachment: fixed;
+    
+}
+
+
+
+
+
+/* PARALLAX */
