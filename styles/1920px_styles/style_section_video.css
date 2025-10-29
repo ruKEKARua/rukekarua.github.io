@@ -118,20 +118,50 @@
 
 }
 
-.control_panel .timeline_block .timeline svg {
+.control_panel .timeline_block .timeline svg, .control_panel .volume_block .volume_line svg {
 
     position: relative;
     top: -4px;
+
+    cursor: pointer;
 
 }
 
 .control_panel .volume_block {
 
+    display: flex;
+    align-items: center;
+
     width: 243px;
 
 }
 
+.control_panel .volume_block svg {
+    cursor: pointer;
+}
+
+.control_panel .volume_block .volume_line {
+
+    width: 155px;
+    height: 8px;
+
+    margin-left: 50px;
+
+    background: linear-gradient(90deg, rgb(113, 7, 7) 38%, rgb(196, 196, 196) 1%);
+
+}
+
+.control_panel .volume_block .volume_line svg {
+
+    left: 38%;
+
+}
+
 .control_panel .fullscreen {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 95px;
     margin: 0 0 0 20px;
