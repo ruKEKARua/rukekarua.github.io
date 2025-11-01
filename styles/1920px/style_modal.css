@@ -151,8 +151,9 @@
 .date input, .time input {
 
     width: 111px;
-
+    
 }
+
 
 
 
@@ -172,6 +173,144 @@
     margin: 20px 0;
 
 }
+
+.type_selector {
+
+    width: 330px;
+    height: 45px;
+
+    background: transparent;
+    border: none;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;    
+
+    padding-left: 10px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    opacity: 0.6;
+
+}
+
+.entry_ticket {
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 13px;
+    padding-left: 15px;
+
+    width: 383px;
+    height: 135px;
+
+    border: 1px solid black;
+
+}
+
+.entry_ticket_label {
+
+    width: 370px;
+    height: 25px;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+
+    color: rgba(157, 134, 101, 1);
+
+    border-bottom: 2px solid rgba(116, 12, 17, 0.89);
+
+}
+
+.inputs_wrapper {
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10px;
+
+}
+
+.basic_block, .senior_block {
+
+    display: flex;
+
+    width: 370px;
+    height: 20px;
+
+}
+
+.basic_block {
+
+    margin-top: 10px;
+
+}
+
+.senior_block {
+
+    margin-top: 22px;
+}
+
+.basic_block p, .senior_block p {
+
+    width: 265px;
+
+    font-weight: 400;
+    font-size: 18px;
+    
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.basic_inputs, .senior_inputs {
+
+    display: flex;
+
+    position: relative;
+    bottom: 8px;
+    left: 2px;    
+
+    width: 105px;
+    height: 25px;
+    
+    border: 1px solid black;
+
+}
+
+.entry_ticket button, .entry_ticket input {
+
+    width: 35px;
+    height: 25px;
+
+    margin: 0;
+
+    text-align: center;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.entry_ticket button {
+
+    background-color: rgba(3, 3, 3, 1);
+    border: none;
+}
+
+
+
 
 .right_block {
 
