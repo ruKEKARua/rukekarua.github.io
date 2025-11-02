@@ -307,6 +307,8 @@
 
     background-color: rgba(3, 3, 3, 1);
     border: none;
+    
+    cursor: pointer;
 }
 
 
@@ -317,5 +319,118 @@
     width: 530px;
 
     border: 1px solid black;
+
+}
+
+.right_block_wrapper {
+
+    display: flex;
+    padding: 26px 30px;
+    
+}
+
+.header_right_block {
+
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 151px;
+
+}
+
+.inputs_values {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.overview {
+
+    width: 145px;
+    height: 65px;
+
+    font-weight: 500;
+    font-size: 32px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.header_right_block span {
+
+    font-weight: 500;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    position: relative;
+    bottom: -9px;
+
+    color: rgba(116, 12, 17, 1);
+
+}
+
+
+.inputs_values {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 320px;
+
+    margin-top: 11px;
+
+}
+
+.date_value, .time_value, .ticket_value {
+
+    display: flex;
+
+    font-weight: 300;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.date_value svg, .time_value svg, .ticket_value svg {
+
+    display: flex;
+
+    margin-right: 17px;
+
+}
+
+.time_value {
+
+    margin: 8px 0;
+
+}
+
+.time_value p {
+
+    letter-spacing: 12%;
+
+}
+
+
+.booking_image {
+
+    width: 150px;
+    height: 120px;
+
+    position: absolute;
+
+    left: 790px;
+    bottom: 518px;
+
+    background: no-repeat;
+    background-image: url(/assets/img/booking.jpg);
+    background-size: 150px 120px;
+    
 
 }
