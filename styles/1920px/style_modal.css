@@ -1,0 +1,758 @@
+
+
+.booking_modal {
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    bottom: 893px;
+    z-index: 9999;
+
+    background-color: white;
+
+}
+
+.modal_wrapper {
+
+    display: flex;
+
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;   
+
+}
+
+.form_wrapper {
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    right: 80px;
+
+    width: 970px;
+    height: 663px;
+
+    margin: 104px auto;
+
+}
+
+.left_block, .right_block {
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.left_block {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+
+}
+
+.left_block input::placeholder {
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.left_block input {
+
+    height: 45px;
+
+    margin-left: 10px;
+
+}
+
+.left_block .header_modal {
+
+    height: 140px;
+
+    border-bottom: rgba(116, 12, 17, 0.904) 3px solid;
+
+    margin-bottom: 60px;
+
+}
+
+.left_block .header_modal .title {
+
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+    color: rgba(157, 134, 101, 1);
+
+}
+
+.under_title {
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    color: rgba(113, 7, 7, 1);
+
+    margin-top: 20px;
+
+}
+
+
+.left_block .block_inputs {
+
+    display: flex;
+    flex-direction: column;
+
+    height: 462px;
+
+}
+
+.left_block .block_inputs label {
+
+    height: 43px;
+
+    border: 2px solid rgba(3, 3, 3, 1);
+
+}
+
+.left_block label svg:nth-child(1) {
+    padding-left: 15px;
+}
+
+.left_block .block_inputs label:nth-child(3) svg {
+    position: relative;
+    top: 5px;
+}
+
+.left_block .block_inputs .date_time {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.date, .time {
+
+    width: 190px;
+    padding: 0;
+
+}
+
+.date input, .time input {
+
+    width: 111px;
+    
+}
+
+.left_block .block_inputs .other_inputs {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 20px;
+
+}
+
+.left_block .block_inputs .other_inputs label:nth-child(2), .left_block .block_inputs .other_inputs label:nth-child(4) {
+
+    margin: 18px 0;
+
+}
+
+.type_selector {
+
+    width: 330px;
+    height: 45px;
+
+    background: transparent;
+    border: none;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;    
+
+    padding-left: 10px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    opacity: 0.6;
+
+}
+
+.entry_ticket {
+
+    width: 400px;
+    height: 135px;
+
+    border: 2px solid black;
+
+}
+
+.entry_ticket_wrapper {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 370px;
+    height: 110px;
+
+    margin: 10px auto 15px auto;
+
+}
+
+.entry_ticket_label {
+
+    width: 370px;
+    height: 25px;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+
+    color: rgba(157, 134, 101, 1);
+
+    border-bottom: 2px solid rgba(116, 12, 17, 0.89);
+
+}
+
+.inputs_wrapper {
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10px;
+
+}
+
+.basic_block, .senior_block {
+
+    display: flex;
+
+    width: 370px;
+    height: 20px;
+
+}
+
+.basic_block {
+
+    margin-top: 10px;
+
+}
+
+.senior_block {
+
+    margin-top: 22px;
+}
+
+.basic_block p, .senior_block p {
+
+    width: 265px;
+
+    font-weight: 400;
+    font-size: 18px;
+    
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.basic_inputs, .senior_inputs {
+
+    display: flex;
+
+    position: relative;
+    bottom: 8px;
+    left: 2px;    
+
+    width: 105px;
+    height: 25px;
+    
+    border: 1px solid black;
+
+}
+
+.entry_ticket button, .entry_ticket input {
+
+    width: 35px;
+    height: 25px;
+
+    margin: 0;
+
+    text-align: center;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.entry_ticket button {
+
+    background-color: rgba(3, 3, 3, 1);
+    border: none;
+    
+    cursor: pointer;
+}
+
+
+
+
+.right_block {
+
+    width: 530px;
+
+    border: 1px solid black;
+
+}
+
+.right_block_wrapper {
+
+    display: flex;
+    flex-direction: column;
+    padding: 26px 30px;
+    
+}
+
+.header_right_block {
+
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 151px;
+
+}
+
+.inputs_values {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.overview {
+
+    width: 145px;
+    height: 65px;
+
+    font-weight: 500;
+    font-size: 32px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.header_right_block span {
+
+    font-weight: 500;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    position: relative;
+    bottom: -9px;
+
+    color: rgba(116, 12, 17, 1);
+
+}
+
+
+.inputs_values {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 320px;
+
+    margin-top: 11px;
+
+}
+
+.date_value, .time_value, .ticket_value {
+
+    display: flex;
+
+    font-weight: 300;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.date_value svg, .time_value svg, .ticket_value svg {
+
+    display: flex;
+
+    margin-right: 17px;
+
+}
+
+.time_value {
+
+    margin: 8px 0;
+
+}
+
+.time_value p {
+
+    letter-spacing: 12%;
+
+}
+
+
+.booking_image {
+
+    width: 150px;
+    height: 120px;
+
+    position: absolute;
+
+    left: 790px;
+    bottom: 518px;
+
+    background: no-repeat;
+    background-image: url(/assets/img/booking.jpg);
+    background-size: 174px 120px;
+    background-position: -11px;
+
+    
+
+}
+
+
+.price_result {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 470px;
+    height: 117px;
+
+    margin-top: 22px;
+
+    font-weight: 400;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.price_result .senior_ticket, .price_result .basic_ticket {
+
+    display: flex;
+
+    height: 27px;
+
+}
+
+.price_result .basic_ticket {
+
+    margin-bottom: 6px;
+
+}
+
+.price_result .senior_ticket .count_tickets, .price_result .basic_ticket .count_tickets {
+
+    width: 32px;
+    height: 20px;
+
+    margin-right: 11px;
+
+    text-align: center;
+
+    background-color: rgba(3, 3, 3, 1);
+    border-radius: 5px;
+
+    color: rgba(164, 164, 163, 1);
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.price_result .basic_price, .price_result .senior_price {
+
+    width: 385px;
+
+}
+
+.price_result .final_basic_price, .price_result .final_senior_price  {
+
+    display: flex;
+
+}
+
+.price_result .final_basic_price p:nth-child(2), .price_result .final_senior_price p:nth-child(2) {
+
+    margin-left: 5px;
+
+}
+
+.price_result .senior_ticket .count_tickets p, .price_result .basic_ticket .count_tickets p {
+
+    margin-top: 2px;
+
+}
+
+
+.price_total {
+
+    height: 50px;
+
+    border-top: 2px solid rgba(116, 12, 17, 1);
+
+    margin-top: 6px;
+
+    font-weight: 400;
+    font-size: 32px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.price_total_wrapper {
+
+    display: flex;
+    align-items: center;
+
+    height: 58px;
+
+}
+
+.price_total_wrapper .total {
+
+    width: 408px;
+
+
+}
+
+.final_price_block {
+
+    display: flex;
+}
+
+.final_price_block p:nth-child(1) {
+
+    margin-right: 8px;
+
+}
+
+
+.card_info_input {
+
+    width: 100%;
+    height: 241px;
+
+}
+
+.card_info_wrapper {
+
+    width: 100%;
+    height: 100%;
+
+    margin: 8px auto;
+
+}
+
+.front_card, .back_card {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 360px;
+    height: 211px;
+
+    border-radius: 5px;
+
+    background-repeat: none;
+    background-image: url(/assets/img/front-card.png);
+    background-size: 360px 211px;
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+.arrows {
+
+    width: 28px;
+    height: 35px;
+
+    background: rgba(255, 255, 255, 1);
+   
+    border-left: 0.5px solid rgba(164, 164, 163, 1)
+
+}
+
+.arrows button {
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    position: relative;
+    right: -8px;
+    top: 11px;
+
+}
+
+
+.card_number, .expiration_date {
+
+    display: flex;
+
+
+    width: 215px;
+    height: 35px;
+
+    margin-left: 20px;
+
+}
+
+.card_number {
+
+    margin-top: 34px;
+
+}
+
+.expiration_date {
+
+    justify-content: space-between;
+
+    margin-top: 29px;
+
+}
+
+.card_number input, .expiration_date input, .cardholder input, .back_card input {
+
+    width: 215px;
+    height: 35px;
+
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0 0 0 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.expiration_date input {
+
+    width: 70px;
+    height: 35px;
+
+}
+
+.input_block_month, .input_block_year {
+
+    display: flex;
+
+}
+
+
+
+.cardholder {
+
+    width: 320px;
+    height: 35px;
+
+    margin-top: 28px;
+    margin-left: 20px;
+
+}
+.cardholder input {
+
+    width: 320px;
+
+}
+
+
+
+.back_card {
+
+    top: -182px;
+    left: 111px;
+
+    background-image: url(/assets/img/CVV.png);
+
+    z-index: 0;
+
+}
+
+.back_card input {
+
+    width: 75px;
+    height: 35px;
+
+    position: relative;
+
+    top: 105px;
+    left: 266px;
+
+    padding: 0;
+
+    text-align: center;
+
+}
+
+
+
+.submit_button_booking, .submit_button_booking input {
+
+    width: 220px;
+    height: 45px;
+
+    background-color: rgba(113, 7, 7, 1);
+
+    color: rgba(255, 255, 255, 1);
+
+    font-weight: 400;
+    font-size: 22px;
+    
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    padding: 0;
+    margin: 0;
+
+}
+
+.submit_button_booking {
+
+    margin-top: 32px;
+    margin-left: 250px;
+
+}

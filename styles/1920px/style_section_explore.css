@@ -105,17 +105,16 @@
     bottom: 700px;
 }
 
-.explore .picture svg {
+.slider_block {
+
+    width: 40px;
+    height: 100%;
 
     position: relative;
     bottom: 1400px;
     left: 420;
     z-index: 10;
 
-}
-
-.explore .picture svg path:nth-child(1) {
-
-    cursor: pointer;
+    cursor: e-resize;
 
 }

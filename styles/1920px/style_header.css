@@ -44,11 +44,15 @@ header .header_wrapper {
     height: 26px;
 }
 
-.logo p {
+.logo h1 {
 
+    font-weight: 400;
     font-size: 28px;
+    
+    line-height: 100%;
     letter-spacing: 5px;
     text-transform: uppercase;
+
 
     width: 125px;
     height: 31px;
