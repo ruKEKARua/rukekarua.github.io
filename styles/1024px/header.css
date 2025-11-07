@@ -1,0 +1,28 @@
+@media (max-width: 1024px) {
+    
+    .header_wrapper {
+
+        width: 984px;
+        height: 130px;
+
+    }
+
+    header .navigation {
+
+        width: 400px;
+
+    }
+
+    header .navigation ul {
+
+        width: 300px;
+        
+
+    }
+
+
+
+
+
+
+}
