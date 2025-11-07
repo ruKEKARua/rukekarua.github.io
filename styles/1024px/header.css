@@ -1,28 +1,58 @@
-@media (max-width: 1024px) {
+header {
+
+    height: 130px;
+
+}
+
+header .header_wrapper {
+
+    width: 984px;
+
+}
+
+header .navigation {
+
+    display: none;
+
+    position: absolute;
+
+    width: 400px;
+
+}
+
+header .navigation ul {
     
-    .header_wrapper {
+    width: 300px;
+    
+}
 
-        width: 984px;
-        height: 130px;
+.logo {
 
-    }
+    padding-top: 50px;
 
-    header .navigation {
+}
 
-        width: 400px;
+.logo_wrapper {
 
-    }
+    width: 950px;
 
-    header .navigation ul {
-
-        width: 300px;
-        
-
-    }
+}
 
 
+.burger_menu_button {
 
+    display: block;
 
+}
 
+.burger_menu_button .svg_wrapper {
+
+    margin: auto;
+
+    height: 20px;
+    
+    cursor: pointer;
+
+    margin-top: 10px;
 
 }
