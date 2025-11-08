@@ -1,13 +1,12 @@
-
-@import url("style_header.css");
-@import url("style_section_welcome.css");
-@import url("style_section_visiting.css");
-@import url("style_section_explore.css");
-@import url("style_section_video.css");
-@import url("style_section_gallery.css");
-@import url("style_section_tickets.css");
-@import url("style_section_contacts.css");
-@import url("style_footer.css");
+@import url("header.css");
+@import url("section_welcome.css");
+@import url("section_visiting.css");
+@import url("section_explore.css");
+@import url("section_video.css");
+@import url("section_gallery.css");
+@import url("section_tickets.css");
+@import url("section_contacts.css");
+@import url("footer.css");
 
 html {
     scroll-behavior: smooth;
