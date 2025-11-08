@@ -1,6 +1,6 @@
 .visiting {
 
-    margin-top: 60px;
+    margin-top: 65px;
 
 }
 
@@ -23,5 +23,54 @@
 
     line-height: 75px;
     letter-spacing: 5px;
+
+}
+
+.tours {
+
+    justify-content: center;
+    gap: 60px 108px;
+
+}
+
+.tour {
+
+    width: 330px;
+    height: 345px;
+
+}
+
+.tour_title {
+
+    font-weight: 400;
+    font-size: 28px;
+
+    line-height: 100%;
+    letter-spacing: 3px;
+
+    border-bottom: 2px;
+
+}
+
+.tour .type {
+
+
+    font-weight: 200;
+    font-size: 20px;
+    
+    line-height: 100%;
+    letter-spacing: 0%;
+
+
+}
+
+
+.view_type {
+
+    font-weight: 200;
+    font-size: 16px;
+    
+    line-height: 100%;
+    letter-spacing: 0%;
 
 }
