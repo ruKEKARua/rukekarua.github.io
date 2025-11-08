@@ -7,3 +7,14 @@
 @import url("section_tickets.css");
 @import url("section_contacts.css");
 @import url("footer.css");
+
+
+h2 {
+
+    font-weight: 400;
+    font-size: 50px;
+
+    line-height: 75px;
+    letter-spacing: 5px;
+
+}
