@@ -1,0 +1,27 @@
+.visiting {
+
+    margin-top: 60px;
+
+}
+
+.visiting_wrapper {
+
+    width: 984px;
+
+}
+
+.visiting .title {
+
+    height: 95px;
+
+}
+
+.visiting .title h2 {
+
+    font-weight: 400;
+    font-size: 50px;
+
+    line-height: 75px;
+    letter-spacing: 5px;
+
+}
