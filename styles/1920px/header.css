@@ -84,10 +84,16 @@ header .header_wrapper {
 
 }
 
+.adaptive_arrow {
+
+    display: none;
+
+}
+
 .navigation a {
+    
     text-align: center;
 
-    
 }
 
 .burger_menu_button {
