@@ -1,5 +1,8 @@
 .welcome {
 
+    position: relative;
+    z-index: 1;
+
     height: 585px;
 
 }
@@ -20,7 +23,7 @@
 .welcome .text {
 
     width: 400px;
-    height: 233px;
+    height: 350px;
 
     margin-top: 30px;
 
@@ -72,8 +75,8 @@
 
     height: 525px;
 
-    top: 130px;
-    background-position: 75px 0;
+    top: 0px;
+    background-position: 74px 0;
 
 }
 
@@ -82,7 +85,7 @@
     width: 700px;
     height: 120px;
     
-    top: 181px;
+    top: 65px;
 
     margin-left: 300px;
 

@@ -1,6 +1,6 @@
 header {
 
-    height: 130px;
+    height: 125px;
 
 }
 
@@ -14,16 +14,47 @@ header .navigation {
 
     display: none;
 
-    position: absolute;
-
     width: 400px;
+    height: 465px;
+
+    position: absolute;
+    top: 129px;
+    z-index: 99;
+    
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 0) 100%);
+    
 
 }
 
 header .navigation ul {
+
+    flex-direction: column;
     
     width: 300px;
-    
+    height: 500px;
+
+    margin-left: 55px;
+
+}
+
+header .navigation ul li {
+
+    display: flex;
+
+}
+
+header .navigation ul li a {
+
+    width: 110px;
+
+    text-align: left;
+
+}
+
+.adaptive_arrow {
+
+    margin-top: 7px;
+
 }
 
 .logo {
@@ -45,7 +76,7 @@ header .navigation ul {
 
 }
 
-.burger_menu_button .svg_wrapper {
+.burger_menu_button .burder_svg, .burger_menu_button .cross_svg {
 
     margin: auto;
 
@@ -54,5 +85,17 @@ header .navigation ul {
     cursor: pointer;
 
     margin-top: 10px;
+
+}
+
+.burger_menu_button .burder_svg {
+
+    display: block;
+
+}
+
+.burger_menu_button .cross_svg {
+
+    display: none;
 
 }
