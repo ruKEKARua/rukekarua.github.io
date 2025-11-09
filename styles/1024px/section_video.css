@@ -1,4 +1,6 @@
 .video_journey {
+    
+    height: 881px;
 
     margin-top: 60px;
 
@@ -7,7 +9,7 @@
 .video_journey_wrapper {
 
     width: 984px;
-    height: 881px;
+    height: 100%;
 
 }
 
