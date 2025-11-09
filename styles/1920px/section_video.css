@@ -93,7 +93,7 @@
     width: 30px;
     height: 30px;
 
-    margin: 27px 30px 27px 50px;
+    margin: 27px 50px 27px 30px;
     cursor: pointer;
 
 }
@@ -285,15 +285,23 @@
 
     bottom: 40px;
 
-    width: 452px;
-    height: 254px;
+    width: 100%;
+    height: 100%;
 }
 
 .youtube_play_button {
 
+    width: 68px;
+    height: 48px;
+
     position: relative;
     bottom: 151;
     left: 192;
+
+    background-image: url(/assets/img/video/youtube_play.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 100%;
 
 }
 
@@ -328,8 +336,6 @@
 }
 
 .video_name {
-    display: flex;
-    justify-self: flex-start;
 
     width: 330px;
     height: 39px;
@@ -350,7 +356,15 @@
 
 .dots { 
 
+    width: 4px;
+    height: 18px;
+
     padding: 13px 0 0 0;
+
+    background-image: url(/assets/img/video/youtube_dots.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 100%;
 
 }
 
@@ -374,15 +388,49 @@
 
 }
 
-.video_block .pages_wrapper circle, .video_block .pages_wrapper path {
-    transition: 0.2s;
+.arrow_button_left, .arrow_button_right {
+
+    width: 10px;
+    height: 12px;
+    
+    background-image: url(/assets/img/video/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 100%;
+
     cursor: pointer;
+
 }
 
-.video_block .pages_wrapper circle:hover {
+.arrow_button_right {
+
+    transform: rotate(180deg);
+
+}
+
+.circle {
+
+    width: 12px;
+    height: 12px;
+
+    background: rgba(153, 153, 153, 1);
+    border-radius: 100%;
+
     transition: 0.2s;
-    fill: rgba(113, 7, 7, 1);
+
+    cursor: pointer;
 
 }
 
+.circle:hover {
 
+    transition: 0.2s;
+    background: rgba(113, 7, 7, 1);
+
+}
+
+.circle_active {
+
+    background: rgba(51, 51, 51, 1);
+
+}
