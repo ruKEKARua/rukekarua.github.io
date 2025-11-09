@@ -19,11 +19,10 @@
 
     margin: 0 auto;
 
-    padding: 32px 240px 0 240px;
     background-image: url(/assets/img/welcome-slider/1.jpg);
     background-repeat: no-repeat;
     background-size: 1000px 750px;
-    background-position: 680px 0;
+    background-position: 440px 0;
 }
 
 .gradient_monalisa {
@@ -49,7 +48,7 @@
     width: 600px;
     height: 388px;
 
-    margin: 120px 0 0 0;
+    padding: 150px 0 0 0;
 
     z-index: 2;
 }
