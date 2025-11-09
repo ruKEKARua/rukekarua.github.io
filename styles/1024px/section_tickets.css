@@ -3,13 +3,13 @@
     width: 1024px;
     height: 598px;
 
+    margin-top: 60px;
+
 }
 
 .tickets_wrapper {
 
     width: 984px;
-
-    padding: 60px 0;
 
 }
 
@@ -76,5 +76,18 @@
 
     bottom: 0;
     right: 0;
+
+}
+
+.parallax {
+
+    margin-top: 60px;
+
+}
+
+.parallax_wrapper {
+
+    background-size: 1920px 1050px;
+    background-position: -450px 0;
 
 }
