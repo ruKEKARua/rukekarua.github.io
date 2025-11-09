@@ -1,0 +1,93 @@
+.tickets {
+
+    width: 1024px;
+    height: 598px;
+
+    margin-top: 60px;
+
+}
+
+.tickets_wrapper {
+
+    width: 984px;
+
+}
+
+.tickets h2 {
+
+    height: 95px;
+
+    margin-bottom: 60px;
+
+}
+
+.tickets .image {
+
+    width: 700px;
+    height: 440px;
+
+}
+
+.tickets .ticket_type {
+
+    display: none;
+
+}
+
+.tickets .amount {
+
+    margin-left: 80px;
+
+}
+
+.tickets .amount .head_text {
+
+    text-align: left;
+
+}
+
+.ticket_basic {
+
+    margin: 5px 0 0 0;
+
+}
+
+.ticket_senior {
+
+    margin: 25px 0 20px 0;
+
+}
+
+.total_price p span {
+
+    margin-left: 15px;
+
+}
+
+.count_button {
+
+    width: 170px;
+
+    margin-top: 11px;
+
+}
+
+.submit_button_block {
+
+    bottom: 0;
+    right: 0;
+
+}
+
+.parallax {
+
+    margin-top: 60px;
+
+}
+
+.parallax_wrapper {
+
+    background-size: 1920px 1050px;
+    background-position: -450px 0;
+
+}

@@ -9,16 +9,17 @@
     position: relative;
     z-index: 1;
 
+    margin-top: 75px;
+
 }
 
 
 .tickets_wrapper {
 
     width: 1440px;
-    height: 743px;
+    height: 100%;
 
     margin: 0 auto;
-    padding: 75px 0;
 
 }
 
@@ -55,7 +56,11 @@
 .tickets .image {
 
     width: 720px;
-    height: 550px;    
+    height: 550px;
+    
+    background: url(/assets/img/ticket/ticket_canvas.jpg) no-repeat;
+    background-position: 0px;
+    background-size: 100%;
 
 }
 
@@ -66,7 +71,7 @@
 
     width: 420px;
 
-    margin: 2px 240px 0 59px;
+    margin: 2px 0px 0 60px;
 
     font-weight: 300;
     font-size: 22px;
@@ -159,11 +164,11 @@
 
 
     width: 150px;
-    height: 341px;
+    height: 441px;
 
     text-align: right;
 
-    margin-top: 2px;
+    margin: 2px 0 0 90px;
 
 }
 
@@ -178,7 +183,14 @@
     margin-bottom: 30px;
 
 }
-.ticket_basic {margin-bottom: 10px;}
+
+.amount_wrapper {
+
+    width: 175px;
+    height: 443px;
+
+}
+
 .ticket_basic, .ticket_senior {
 
     width: 150px;
@@ -194,11 +206,17 @@
 
 }
 
+.ticket_senior {
+
+    margin: 10px 0 50px 0;
+
+}
+
 .count_button {
 
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+    justify-content: space-between;
     
     width: 145px;
     height: 45px;
@@ -263,18 +281,21 @@
 
 .total_price {
 
-    width: 151px;
+    width: 170px;
     height: 40px;
 
-    margin-top: 50px;
-    margin-bottom: 60px;
+}
+
+.total_price p {
+    
+    display: flex;
+    flex-direction: row;
 
     font-weight: 700;
     font-size: 28px;
     
     line-height: 100%;
     letter-spacing: 1.65px;
-
 
 }
 
@@ -286,6 +307,8 @@
 
     width: 175px;
     height: 50px;
+
+    margin-top: 60px;
 
     background: #000000;
 
