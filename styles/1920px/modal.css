@@ -197,8 +197,8 @@
 
 .entry_ticket {
 
-    width: 400px;
-    height: 135px;
+    width: 397px;
+    height: 131px;
 
     border: 2px solid black;
 
@@ -760,7 +760,11 @@
 
 .close_button {
 
+    width: 25px;
+    height: 25px;
+
     position: relative;
     top: -723px;
     left: 710px;
+
 }

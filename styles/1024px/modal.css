@@ -6,10 +6,23 @@
 
 }
 
+.modal_wrapper {
+
+    width: 100%;
+
+}
+
 .form_wrapper {
 
-    margin: 0 0 0 50px;
+    margin: 15px 0px 0 27px;
 
     right: 0;
+
+}
+
+.close_button {
+
+    top: -705px;
+    left: 505px;
 
 }
