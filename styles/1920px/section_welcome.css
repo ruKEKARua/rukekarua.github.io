@@ -195,24 +195,21 @@
     height: 16px;
 
     background-color: rgba(255, 255, 255, 1);
+    transition: 0.2s;
 
-    
+    cursor: pointer;
+
 }
 
-.pagination a {
-    display: block;
-    width: 16px;
-    height: 16px;
-}
-.pagination .active:hover {
+.pagination .page:hover {
     background-color: rgba(157, 134, 101, 1);
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
-.pagination .active {
+#active {
 
     background-color: rgba(210, 177, 131, 1);
-    transition: 0.5s;
+    transition: 0.2s;
 
 }
 

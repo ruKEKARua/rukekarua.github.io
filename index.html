@@ -162,7 +162,7 @@
 
                                 <div>
 
-                                    <p id="changable_number">01</p>
+                                    <p>0<span id="changable_number">1</span></p>
                                     <p class="middle_paragraph">|</p>     
                                     <p>05</p>
 
@@ -172,21 +172,21 @@
 
                             <div class="pages">
 
-                                <div class="page active"><a href="#"></a></div>
-                                <div class="page"><a href="#"></a></div>
-                                <div class="page"><a href="#"></a></div>
-                                <div class="page"><a href="#"></a></div>
-                                <div class="page"><a href="#"></a></div>
+                                <div class="page" onclick="changeWelcomeImage(1)" id="active"></div>
+                                <div class="page" onclick="changeWelcomeImage(2)"></div>
+                                <div class="page" onclick="changeWelcomeImage(3)"></div>
+                                <div class="page" onclick="changeWelcomeImage(4)"></div>
+                                <div class="page" onclick="changeWelcomeImage(5)"></div>
 
                             </div>
 
                             <div class="change_page">
 
-                                <div class="arrow_left">
+                                <div class="arrow_left" onclick="changeWelcomeImage('leftArrow')">
                                     
                                 </div>
 
-                                <div class="arrow_right">
+                                <div class="arrow_right" onclick="changeWelcomeImage('rightArrow')">
                                     
                                 </div>
 
