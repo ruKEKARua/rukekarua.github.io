@@ -1,14 +1,12 @@
-
-
 .booking_modal {
 
-    display: none;
+    display: block;
 
     width: 100%;
-    height: 100%;
+    height: 845px;
 
     position: relative;
-    bottom: 893px;
+    bottom: 818px;
     z-index: 9999;
 
     background-color: white;
@@ -199,8 +197,8 @@
 
 .entry_ticket {
 
-    width: 400px;
-    height: 135px;
+    width: 397px;
+    height: 131px;
 
     border: 2px solid black;
 
@@ -756,5 +754,17 @@
 
     margin-top: 32px;
     margin-left: 250px;
+
+}
+
+
+.close_button {
+
+    width: 25px;
+    height: 25px;
+
+    position: relative;
+    top: -723px;
+    left: 710px;
 
 }
