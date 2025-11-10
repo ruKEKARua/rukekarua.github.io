@@ -4,7 +4,7 @@
 
 
     width: 100%;
-    height: 893px;
+    height: 743px;
 
     position: relative;
     z-index: 1;
@@ -109,12 +109,6 @@
 
 }
 
-.tickets .ticket_type .inputs label {
-
-    cursor: pointer;
-
-}
-
 .tickets .ticket_type .inputs input {
 
     width: 17px;
@@ -132,6 +126,8 @@
 
     border: 2px solid black;
     border-radius: 50%;
+
+    cursor: pointer;
 }
 
 .tickets .ticket_type .inputs input:checked {
@@ -147,6 +143,8 @@
     background-image: url("/assets/img/ticket/Ellipse 0.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    cursor: default;
 
 }
 
@@ -333,6 +331,8 @@
 
     width: 100%;
     height: 400px;
+
+    margin-top: 75px;
 
 }
 

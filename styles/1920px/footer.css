@@ -8,6 +8,8 @@ footer {
 
     background-color: rgba(3, 3, 3, 1);
     color: white;
+
+    margin-top: 75px;
     
 }
 
@@ -34,6 +36,14 @@ footer .logo {
     width: 340px;
     
     padding-top: 83px;
+
+    font-weight: 400;
+    font-size: 28px;
+
+    line-height: 100%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
     
 }
 
