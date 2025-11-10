@@ -34,7 +34,7 @@
     z-index: 1;
 
     width: 1000px;
-    height: 750px;
+    height: 752px;
 
     background: #000000;
     background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 23%);
@@ -234,5 +234,31 @@
 }
 
 .pagination .arrow_left, .pagination .arrow_right {
+    
+    width: 30px;
+    height: 8px;
+
+    background: url(/assets/img/arrow_welcome.png) no-repeat;
+    background-position: 0px;
+    background-size: 100%;
+
     cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.pagination .arrow_left:hover, .pagination .arrow_right:hover {
+
+    background: url(/assets/img/arrow_welcome_hover.png) no-repeat;
+    background-position: 0px;
+    background-size: 100%;
+
+    transition: 0.2s;
+
+}
+
+.pagination .arrow_right {
+
+    transform: rotate(180deg);
+
 }
