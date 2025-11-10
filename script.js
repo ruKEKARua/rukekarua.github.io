@@ -1,7 +1,17 @@
-const changeWelcomeImage = (value) => {
+const welcomeBackgroundBlock = document.querySelector('.welcome_wrapper');
+const pages = document.querySelectorAll('.page')
 
-    const welcomeBackgroundBlock = document.querySelector('.welcome_wrapper');
-    const pages = document.querySelectorAll('.page')
+const pictureBlock = document.querySelector(".picture");
+const imageBefore = document.querySelector('.image_before');
+const slider = document.querySelector('.slider_block');
+
+const handleMoveMouse = (target) => {
+
+    console.log("движение")
+
+}
+
+const changeWelcomeImage = (value) => {
 
     let numberOfPage = document.querySelector('#changable_number');
     let activePage = document.querySelector('#active');
@@ -78,3 +88,21 @@ const changeWelcomeImage = (value) => {
     pages[numberOfPage.textContent-1].setAttribute('id', 'active')
 
 }
+
+
+const mouseClickOnSlider = () => {
+
+    pictureBlock.addEventListener('mousemove', handleMoveMouse);
+    pictureBlock.addEventListener('mouseup', mouseUnclickOnSlider);
+
+}
+
+const mouseUnclickOnSlider = () => {
+
+    pictureBlock.removeEventListener('mousemove', handleMoveMouse);
+    pictureBlock.removeEventListener('mouseup', mouseUnclickOnSlider)
+
+}
+
+
+pictureBlock.addEventListener('mousedown', mouseClickOnSlider);
