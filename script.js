@@ -1,7 +1,18 @@
-const changeWelcomeImage = (value) => {
+const welcomeBackgroundBlock = document.querySelector('.welcome_wrapper');
+const pages = document.querySelectorAll('.page')
 
-    const welcomeBackgroundBlock = document.querySelector('.welcome_wrapper');
-    const pages = document.querySelectorAll('.page')
+const pictureBlock = document.querySelector(".picture");
+const imageBefore = document.querySelector('.image_before');
+const slider = document.querySelector('.slider_block');
+
+const pictureBlockParams = pictureBlock.getBoundingClientRect();
+const maxDistanceForSlider = 700;
+const minDistanceForSlider = -20;
+const maxDistanceForImage = 700;
+const minDistanceForImage = 0;
+
+
+const changeWelcomeImage = (value) => {
 
     let numberOfPage = document.querySelector('#changable_number');
     let activePage = document.querySelector('#active');
@@ -76,5 +87,42 @@ const changeWelcomeImage = (value) => {
 
     activePage.removeAttribute('id');
     pages[numberOfPage.textContent-1].setAttribute('id', 'active')
+
+}
+
+const sliderActive = (target) => {
+
+    let newPos = target.clientX-970;
+
+    slider.style = `left: ${newPos};`;
+    imageBefore.style = `width: ${newPos+20};`;
+    
+    if (newPos >= maxDistanceForSlider) {
+
+        slider.style = `left: ${maxDistanceForSlider};`;
+        imageBefore.style = `width: ${maxDistanceForImage};`;
+
+    }
+
+    if (newPos <= minDistanceForSlider) {
+
+        slider.style = `left: ${minDistanceForSlider};`;
+        imageBefore.style = `width: ${minDistanceForImage};`;
+
+    }
+
+}
+
+const handleRemoveListener = () => {
+
+    pictureBlock.removeEventListener('mouseup', handleRemoveListener)
+    pictureBlock.removeEventListener('mousemove', sliderActive)
+
+}
+
+const handleSlider = () => {
+
+    pictureBlock.addEventListener('mouseup', handleRemoveListener)
+    pictureBlock.addEventListener('mousemove', sliderActive)
 
 }
