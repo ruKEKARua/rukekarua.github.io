@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -163,7 +162,7 @@
 
                                 <div>
 
-                                    <p id="changable_number">01</p>
+                                    <p>0<span id="changable_number">1</span></p>
                                     <p class="middle_paragraph">|</p>     
                                     <p>05</p>
 
@@ -173,26 +172,22 @@
 
                             <div class="pages">
 
-                                <div class="page active"><a href="#"></a></div>
-                                <div class="page"><a href="#"></a></div>
-                                <div class="page"><a href="#"></a></div>
-                                <div class="page"><a href="#"></a></div>
-                                <div class="page"><a href="#"></a></div>
+                                <div class="page" onclick="changeWelcomeImage(1)" id="active"></div>
+                                <div class="page" onclick="changeWelcomeImage(2)"></div>
+                                <div class="page" onclick="changeWelcomeImage(3)"></div>
+                                <div class="page" onclick="changeWelcomeImage(4)"></div>
+                                <div class="page" onclick="changeWelcomeImage(5)"></div>
 
                             </div>
 
                             <div class="change_page">
 
-                                <div class="arrow_left">
-                                    <svg width="30" height="8" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M5.72254 8C3.90173 6.31339 1.99422 5.08262 0 4.30769V3.69231C1.99422 2.89459 3.90173 1.66382 5.72254 0H7.23988C6.37283 1.4359 5.53468 2.52991 4.72543 3.28205H30V4.71795H4.72543C5.53468 5.47009 6.37283 6.5641 7.23988 8H5.72254Z" fill="white"/>
-                                    </svg>
+                                <div class="arrow_left" onclick="changeWelcomeImage('leftArrow')">
+                                    
                                 </div>
 
-                                <div class="arrow_right">
-                                    <svg width="30" height="8" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M24.2775 1.97284e-06C26.0983 1.68661 28.0058 2.91738 30 3.69231L30 4.30769C28.0058 5.10541 26.0983 6.33618 24.2775 8L22.7601 8C23.6272 6.5641 24.4653 5.47009 25.2746 4.71795L3.48964e-07 4.71795L5.01636e-07 3.28205L25.2746 3.28205C24.4653 2.52992 23.6272 1.4359 22.7601 1.86378e-06L24.2775 1.97284e-06Z" fill="white"/>
-                                    </svg>
+                                <div class="arrow_right" onclick="changeWelcomeImage('rightArrow')">
+                                    
                                 </div>
 
                             </div>
@@ -358,7 +353,7 @@
 
                         <div class="image_after"></div>
 
-                        <div class="slider_block">
+                        <div class="slider_block" onmousedown="handleSlider()" onmouseup="handleRemoveListener()">
                             <svg width="39" height="700" viewBox="0 0 39 700" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 365C27.5081 365 34 358.508 34 350.5C34 342.492 27.5081 336 19.5 336C11.4919 336 5 342.492 5 350.5C5 358.508 11.4919 365 19.5 365ZM19.5 370C30.2696 370 39 361.27 39 350.5C39 339.73 30.2696 331 19.5 331C8.73045 331 0 339.73 0 350.5C0 361.27 8.73045 370 19.5 370Z" fill="white"/>
                                 <path d="M17 0H22V332H17V0Z" fill="white"/>

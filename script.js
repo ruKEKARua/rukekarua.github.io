@@ -126,4 +126,3 @@ const handleSlider = () => {
     pictureBlock.addEventListener('mousemove', sliderActive)
 
 }
-
