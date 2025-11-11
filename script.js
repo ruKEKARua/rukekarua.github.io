@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 const welcomeBackgroundBlock = document.querySelector('.welcome_wrapper');
 const pages = document.querySelectorAll('.page')
 
@@ -128,4 +126,4 @@ const handleSlider = () => {
     pictureBlock.addEventListener('mousemove', sliderActive)
 
 }
->>>>>>> Stashed changes
+
