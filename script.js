@@ -6,8 +6,11 @@ const imageBefore = document.querySelector('.image_before');
 const slider = document.querySelector('.slider_block');
 
 const pictureBlockParams = pictureBlock.getBoundingClientRect();
-const maxDistance = 700;
-const minDistance = -20;
+const maxDistanceForSlider = 700;
+const minDistanceForSlider = -20;
+const maxDistanceForImage = 700;
+const minDistanceForImage = 0;
+
 
 const changeWelcomeImage = (value) => {
 
@@ -87,22 +90,24 @@ const changeWelcomeImage = (value) => {
 
 }
 
-const handleGetDirection = (target) => {
+const sliderActive = (target) => {
 
     let newPos = target.clientX-970;
 
-
     slider.style = `left: ${newPos};`;
+    imageBefore.style = `width: ${newPos+20};`;
     
-    if (newPos >= maxDistance) {
+    if (newPos >= maxDistanceForSlider) {
 
-        slider.style = `left: ${maxDistance};`;
+        slider.style = `left: ${maxDistanceForSlider};`;
+        imageBefore.style = `width: ${maxDistanceForImage};`;
 
     }
 
-    if (newPos <= minDistance) {
+    if (newPos <= minDistanceForSlider) {
 
-        slider.style = `left: ${minDistance};`;
+        slider.style = `left: ${minDistanceForSlider};`;
+        imageBefore.style = `width: ${minDistanceForImage};`;
 
     }
 
@@ -111,13 +116,13 @@ const handleGetDirection = (target) => {
 const handleRemoveListener = () => {
 
     pictureBlock.removeEventListener('mouseup', handleRemoveListener)
-    pictureBlock.removeEventListener('mousemove', handleGetDirection)
+    pictureBlock.removeEventListener('mousemove', sliderActive)
 
 }
 
 const handleSlider = () => {
 
     pictureBlock.addEventListener('mouseup', handleRemoveListener)
-    pictureBlock.addEventListener('mousemove', handleGetDirection)
+    pictureBlock.addEventListener('mousemove', sliderActive)
 
 }
