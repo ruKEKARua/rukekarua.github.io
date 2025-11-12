@@ -63,9 +63,9 @@
 .gradient_art {
 
     display: block;
-    position: absolute;
-    top: 865px;
-    left: 345px;
+    position: relative;
+    bottom: 1020px;
+    left: 578px;
     z-index: 1;
 
     width: 750px;
