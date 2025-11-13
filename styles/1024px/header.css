@@ -15,7 +15,9 @@ header .navigation {
     display: none;
 
     width: 400px;
-    height: 465px;
+    height: 475px;
+
+    font-weight: 300;
 
     position: absolute;
     top: 118px;
@@ -53,7 +55,7 @@ header .navigation ul li a {
 
 .adaptive_arrow {
 
-    margin-top: 7px;
+    display: block;
 
 }
 
@@ -84,7 +86,7 @@ header .navigation ul li a {
     
     cursor: pointer;
 
-    margin-top: 10px;
+    margin-top: 55px;
 
 }
 

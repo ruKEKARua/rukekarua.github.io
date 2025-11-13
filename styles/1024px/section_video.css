@@ -124,8 +124,9 @@
 
     height: 170px;
 
-}
+    margin-top: 36px;
 
+}
 
 .youtube_video {
 
@@ -136,8 +137,8 @@
 
 .youtube_play_button { 
 
-    bottom: 108px;
-    left: 117px;
+    bottom: 112px;
+    left: 115px;
 
 }
 

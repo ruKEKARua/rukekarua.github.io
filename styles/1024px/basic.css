@@ -9,6 +9,12 @@
 @import url("footer.css");
 
 
+html {
+
+    scrollbar-width: none
+
+}
+
 h2 {
 
     font-weight: 400;
