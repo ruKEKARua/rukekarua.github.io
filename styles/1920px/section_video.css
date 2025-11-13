@@ -58,7 +58,7 @@
 
 }
 
-.video_block .main_video  video {
+.video_block .main_video video {
 
     width: 100%; 
     height: 650px; 
@@ -71,14 +71,17 @@
     height: 85px;
     background-color: black;
 
+    position: relative;
+    left: 0px;
+    top:  -4px;
+    right: 0px;
+    bottom: 0;
+
 }
 
 .control_panel .control_panel_wrapper {
 
     display: flex;
-
-    
-    height: 85px;
 
     position: relative;
     left: 0px;
@@ -295,8 +298,8 @@
     height: 48px;
 
     position: relative;
-    bottom: 151;
-    left: 192;
+    bottom: 157px;
+    left: 192px;
 
     background-image: url(/assets/img/video/youtube_play.png);
     background-repeat: no-repeat;
@@ -313,8 +316,8 @@
     align-content: flex-start;
 
     position: relative;
-    top: 15;
-    left: 10;
+    top: 15px;
+    left: 10px;
     z-index: 1;
 
     width: 406px;
