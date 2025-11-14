@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -131,7 +131,7 @@
 
         <div class="main_wrapper">
             
-            <section class="welcome" id="welcome">
+            <section class="welcome" id="welcome" onmouseup="handleRemoveSliderWelcomeListener()">
 
                 <div class="welcome_wrapper">
 
@@ -150,11 +150,9 @@
 
                     <div class="shield"></div>
 
-                    <div class="slider_wrapper_welcome">
+                    <div class="slider_wrapper_welcome" onmousedown="handleSliderWelcome()" onmouseup="handleRemoveSliderWelcomeListener()">
 
-                        <div class="mona_lisa"></div>
-                        <div class="napoleon"></div>
-                        <div class="woman"></div>
+                        <div class="slider_welcome"></div>
 
                     </div>
 
@@ -181,21 +179,21 @@
 
                             <div class="pages">
 
-                                <div class="page" onclick="changeWelcomeImage('firstPage')" id="active"></div>
-                                <div class="page" onclick="changeWelcomeImage('secondPage')"></div>
-                                <div class="page" onclick="changeWelcomeImage('thirdPage')"></div>
-                                <div class="page" onclick="changeWelcomeImage('fourPage')"></div>
-                                <div class="page" onclick="changeWelcomeImage('fivePage')"></div>
+                                <div class="page" onclick="changeWelcomeImagePagination('firstPage')" id="active"></div>
+                                <div class="page" onclick="changeWelcomeImagePagination('secondPage')"></div>
+                                <div class="page" onclick="changeWelcomeImagePagination('thirdPage')"></div>
+                                <div class="page" onclick="changeWelcomeImagePagination('fourPage')"></div>
+                                <div class="page" onclick="changeWelcomeImagePagination('fivePage')"></div>
 
                             </div>
 
                             <div class="change_page">
 
-                                <div class="arrow_left" onclick="changeWelcomeImage('leftArrow')">
+                                <div class="arrow_left" onclick="changeWelcomeImagePagination('leftArrow')">
                                     
                                 </div>
 
-                                <div class="arrow_right" onclick="changeWelcomeImage('rightArrow')">
+                                <div class="arrow_right" onclick="changeWelcomeImagePagination('rightArrow')">
                                     
                                 </div>
 
@@ -362,7 +360,7 @@
 
                         <div class="image_after"></div>
 
-                        <div class="slider_block" onmousedown="handleSlider()" onmouseup="handleRemoveListener()">
+                        <div class="slider_block" onmousedown="handleSliderExplore('sliderExplore')" onmouseup="handleRemoveSliderExploreListener('sliderExplore')">
                             <svg width="39" height="700" viewBox="0 0 39 700" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 365C27.5081 365 34 358.508 34 350.5C34 342.492 27.5081 336 19.5 336C11.4919 336 5 342.492 5 350.5C5 358.508 11.4919 365 19.5 365ZM19.5 370C30.2696 370 39 361.27 39 350.5C39 339.73 30.2696 331 19.5 331C8.73045 331 0 339.73 0 350.5C0 361.27 8.73045 370 19.5 370Z" fill="white"/>
                                 <path d="M17 0H22V332H17V0Z" fill="white"/>
