@@ -17,13 +17,20 @@ const minDistanceForSlider = -20;
 const maxDistanceForImage = 700;
 const minDistanceForImage = 0;
 const gapBetweenSlides = 15;
-const baseDistanceFromCurrentSlide = 1000
+const baseDistanceFromCurrentSlide = 1000;
 
-let firstImage =  0;
-let secondImage = 1000 + gapBetweenSlides;
-let thirdImage =  2000 + gapBetweenSlides;
-let fourthImage = 3000 + gapBetweenSlides;
-let fiveImage =   4000 + gapBetweenSlides;
+const sliderWelcomeObject = {
+
+    firstImagePosition:  0,
+    secondImagePosition: 1000 + gapBetweenSlides,
+    thirdImagePosition:  2000 + gapBetweenSlides,
+    fourthImagePosition: 3000 + gapBetweenSlides,
+    fiveImagePosition:   4000 + gapBetweenSlides,
+
+    isDrag: false,
+    startX: 0,
+
+}
 
 const onMouseUpChangeSliderImage = (target) => {
 
@@ -32,8 +39,6 @@ const onMouseUpChangeSliderImage = (target) => {
     let numberOfPage = document.querySelector('#changable_number');
 
     if (newPos > centerOfPictureWelcomeBlock) {
-
-        
 
         if (Number(numberOfPage.textContent) == 1) {
 
@@ -70,20 +75,18 @@ const onMouseUpChangeSliderImage = (target) => {
 
 const sliderWelcomeActive = (target) => {
 
-    let newPos = target.clientX - positionPictureWelcomeBlock - centerOfPictureWelcomeBlock;
+    let startX = target.clientx;
+    let newPos = (startX - positionPictureWelcomeBlock - centerOfPictureWelcomeBlock);
 
-    sliderWelcome.style = `transition: 0s; background-position-x: 
-        ${firstImage + newPos}px, 
-        ${secondImage + newPos}px, 
-        ${thirdImage + newPos}px, 
-        ${fourthImage + newPos}px, 
-        ${fiveImage + newPos}px;`;
+    console.log(newPos, firstImage, newPos + firstImage)
+
+     
 
 }
 
 const sliderExploreActive = (target) => {
 
-    let newPos = target.clientX-positionPictureExploreBlock;
+    let newPos = target.clientX - positionPictureExploreBlock;
 
     slider.style = `left: ${newPos}px;`;
     imageBefore.style = `width: ${newPos+20}px;`;
@@ -210,51 +213,51 @@ const changeWelcomeImagePagination = (value) => {
                 
         case 1:
                 
-            firstImage =  0;
-            secondImage = 1000 + gapBetweenSlides;
-            thirdImage =  2000 + gapBetweenSlides;
-            fourthImage = 3000 + gapBetweenSlides;
-            fiveImage =   4000 + gapBetweenSlides;
+            sliderWelcomeObject.firstImagePosition =  0;
+            sliderWelcomeObject.secondImagePosition = 1000 + gapBetweenSlides;
+            sliderWelcomeObject.thirdImagePosition =  2000 + gapBetweenSlides;
+            sliderWelcomeObject.fourthImagePosition = 3000 + gapBetweenSlides;
+            sliderWelcomeObject.fiveImagePosition =   4000 + gapBetweenSlides;
 
             break;
                 
         case 2:
                 
-            firstImage =  -1000 - gapBetweenSlides;
-            secondImage = 0;
-            thirdImage =  1000 + gapBetweenSlides;
-            fourthImage = 2000 + gapBetweenSlides;
-            fiveImage =   3000 + gapBetweenSlides;
+            sliderWelcomeObject.firstImagePosition =  -1000 - gapBetweenSlides;
+            sliderWelcomeObject.secondImagePosition = 0;
+            sliderWelcomeObject.thirdImagePosition =  1000 + gapBetweenSlides;
+            sliderWelcomeObject.fourthImagePosition = 2000 + gapBetweenSlides;
+            sliderWelcomeObject.fiveImagePosition =   3000 + gapBetweenSlides;
 
             break;
                 
         case 3:
                 
-            firstImage =  -2000 - gapBetweenSlides;
-            secondImage = -1000 - gapBetweenSlides;
-            thirdImage =  0;
-            fourthImage = 1000 + gapBetweenSlides;
-            fiveImage =   2000 + gapBetweenSlides;
+            sliderWelcomeObject.firstImagePosition =  -2000 - gapBetweenSlides;
+            sliderWelcomeObject.secondImagePosition = -1000 - gapBetweenSlides;
+            sliderWelcomeObject.thirdImagePosition =  0;
+            sliderWelcomeObject.fourthImagePosition = 1000 + gapBetweenSlides;
+            sliderWelcomeObject.fiveImagePosition =   2000 + gapBetweenSlides;
 
             break;
                 
          case 4:
                 
-            firstImage =  -3000 - gapBetweenSlides;
-            secondImage = -2000 - gapBetweenSlides;
-            thirdImage =  -1000 - gapBetweenSlides;
-            fourthImage = 0;
-            fiveImage =   1000 + gapBetweenSlides;
+            sliderWelcomeObject.firstImagePosition =  -3000 - gapBetweenSlides;
+            sliderWelcomeObject.secondImagePosition = -2000 - gapBetweenSlides;
+            sliderWelcomeObject.thirdImagePosition =  -1000 - gapBetweenSlides;
+            sliderWelcomeObject.fourthImagePosition = 0;
+            sliderWelcomeObject.fiveImagePosition =   1000 + gapBetweenSlides;
 
             break;
 
         case 5:
                 
-            firstImage =  -4000 - gapBetweenSlides;
-            secondImage = -3000 - gapBetweenSlides;
-            thirdImage =  -2000 - gapBetweenSlides;
-            fourthImage = -1000 - gapBetweenSlides;
-            fiveImage =   0;
+            sliderWelcomeObject.firstImagePosition =  -4000 - gapBetweenSlides;
+            sliderWelcomeObject.secondImagePosition = -3000 - gapBetweenSlides;
+            sliderWelcomeObject.thirdImagePosition =  -2000 - gapBetweenSlides;
+            sliderWelcomeObject.fourthImagePosition = -1000 - gapBetweenSlides;
+            sliderWelcomeObject.fiveImagePosition =   0;
 
             break;
             
@@ -263,11 +266,11 @@ const changeWelcomeImagePagination = (value) => {
     }
 
     sliderWelcome.style = `background-position-x: 
-        ${firstImage}px,
-        ${secondImage}px,
-        ${thirdImage}px,
-        ${fourthImage}px,
-        ${fiveImage}px;`;
+        ${sliderWelcomeObject.firstImagePosition}px,
+        ${sliderWelcomeObject.secondImagePosition}px,
+        ${sliderWelcomeObject.thirdImagePosition}px,
+        ${sliderWelcomeObject.fourthImagePosition}px,
+        ${sliderWelcomeObject.fiveImagePosition}px;`;
 
     activePage.removeAttribute('id');
     pages[numberOfPage.textContent-1].setAttribute('id', 'active')
