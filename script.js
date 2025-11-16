@@ -19,15 +19,52 @@ const minDistanceForImage = 0;
 const gapBetweenSlides = 15;
 const baseDistanceFromCurrentSlide = 1000
 
+let firstImage =  0;
+let secondImage = 1000 + gapBetweenSlides;
+let thirdImage =  2000 + gapBetweenSlides;
+let fourthImage = 3000 + gapBetweenSlides;
+let fiveImage =   4000 + gapBetweenSlides;
+
 const onMouseUpChangeSliderImage = (target) => {
 
-    let newPos = target.clientX - positionPictureWelcomeBlock - centerOfPictureWelcomeBlock;
+    let newPos = target.clientX - positionPictureWelcomeBlock;
 
-    if (newPos < centerOfPictureWelcomeBlock) {
+    let numberOfPage = document.querySelector('#changable_number');
+
+    if (newPos > centerOfPictureWelcomeBlock) {
 
         
 
+        if (Number(numberOfPage.textContent) == 1) {
+
+                numberOfPage.textContent = 5;
+                changeWelcomeImagePagination(5);
+
+        } else {
+
+            numberOfPage.textContent = Number(numberOfPage.textContent)-1;
+            changeWelcomeImagePagination(numberOfPage.textContent);
+
+        }
+
     }
+
+    if (newPos < centerOfPictureWelcomeBlock) {
+
+        if (Number(numberOfPage.textContent) == 5) {
+
+                numberOfPage.textContent = 1;
+                changeWelcomeImagePagination(1);
+
+        } else {
+
+            numberOfPage.textContent = Number(numberOfPage.textContent)+1;
+            changeWelcomeImagePagination(numberOfPage.textContent);
+
+        }
+
+    }
+
 
 }
 
@@ -35,11 +72,12 @@ const sliderWelcomeActive = (target) => {
 
     let newPos = target.clientX - positionPictureWelcomeBlock - centerOfPictureWelcomeBlock;
 
-    sliderWelcome.style = `background-position-x: ${newPos}px, 
-        ${newPos + (baseDistanceFromCurrentSlide + gapBetweenSlides)}px, 
-        ${newPos + (baseDistanceFromCurrentSlide + gapBetweenSlides)}px, 
-        ${newPos + (baseDistanceFromCurrentSlide + gapBetweenSlides)}px, 
-        ${newPos + (baseDistanceFromCurrentSlide + gapBetweenSlides)}px;`;
+    sliderWelcome.style = `transition: 0s; background-position-x: 
+        ${firstImage + newPos}px, 
+        ${secondImage + newPos}px, 
+        ${thirdImage + newPos}px, 
+        ${fourthImage + newPos}px, 
+        ${fiveImage + newPos}px;`;
 
 }
 
@@ -102,12 +140,6 @@ const changeWelcomeImagePagination = (value) => {
     let numberOfPage = document.querySelector('#changable_number');
     let activePage = document.querySelector('#active');
 
-    let firstImage = 0;
-    let secondImage = 0;
-    let thirdImage = 0;
-    let fourthImage = 0;
-    let fiveImage = 0;
-
     switch (value) {
 
         case 'rightArrow':
@@ -121,7 +153,7 @@ const changeWelcomeImagePagination = (value) => {
                 numberOfPage.textContent = Number(numberOfPage.textContent)+1;
 
             }
-        
+
             break;
     
         case 'leftArrow':
@@ -143,23 +175,11 @@ const changeWelcomeImagePagination = (value) => {
 
             numberOfPage.textContent = 1;
 
-            firstImage =  0;
-            secondImage = 1000;
-            thirdImage =  2000;
-            fourthImage = 3000;
-            fiveImage =   4000;
-
             break;
 
         case "secondPage": 
 
             numberOfPage.textContent = 2;
-
-            firstImage =  -1000;
-            secondImage = 0;
-            thirdImage =  1000;
-            fourthImage = 2000;
-            fiveImage =   3000;
 
             break;
 
@@ -167,23 +187,11 @@ const changeWelcomeImagePagination = (value) => {
 
             numberOfPage.textContent = 3;
 
-            firstImage =  -2000;
-            secondImage = -1000;
-            thirdImage =  0;
-            fourthImage = 1000;
-            fiveImage =   2000;
-
             break;
 
         case "fourPage": 
 
             numberOfPage.textContent = 4;
-
-            firstImage =  -3000;
-            secondImage = -2000;
-            thirdImage =  -1000;
-            fourthImage = 0;
-            fiveImage =   1000;
 
             break;
 
@@ -191,14 +199,65 @@ const changeWelcomeImagePagination = (value) => {
 
             numberOfPage.textContent = 5;
 
-            firstImage =  -4000;
-            secondImage = -3000;
-            thirdImage =  -2000;
-            fourthImage = -1000;
-            fiveImage =   0;
+            break;
+
+        default:
+            break;
+    }
+
+    
+    switch (Number(numberOfPage.textContent)) {
+                
+        case 1:
+                
+            firstImage =  0;
+            secondImage = 1000 + gapBetweenSlides;
+            thirdImage =  2000 + gapBetweenSlides;
+            fourthImage = 3000 + gapBetweenSlides;
+            fiveImage =   4000 + gapBetweenSlides;
+
+            break;
+                
+        case 2:
+                
+            firstImage =  -1000 - gapBetweenSlides;
+            secondImage = 0;
+            thirdImage =  1000 + gapBetweenSlides;
+            fourthImage = 2000 + gapBetweenSlides;
+            fiveImage =   3000 + gapBetweenSlides;
+
+            break;
+                
+        case 3:
+                
+            firstImage =  -2000 - gapBetweenSlides;
+            secondImage = -1000 - gapBetweenSlides;
+            thirdImage =  0;
+            fourthImage = 1000 + gapBetweenSlides;
+            fiveImage =   2000 + gapBetweenSlides;
+
+            break;
+                
+         case 4:
+                
+            firstImage =  -3000 - gapBetweenSlides;
+            secondImage = -2000 - gapBetweenSlides;
+            thirdImage =  -1000 - gapBetweenSlides;
+            fourthImage = 0;
+            fiveImage =   1000 + gapBetweenSlides;
 
             break;
 
+        case 5:
+                
+            firstImage =  -4000 - gapBetweenSlides;
+            secondImage = -3000 - gapBetweenSlides;
+            thirdImage =  -2000 - gapBetweenSlides;
+            fourthImage = -1000 - gapBetweenSlides;
+            fiveImage =   0;
+
+            break;
+            
         default:
             break;
     }
