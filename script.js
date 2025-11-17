@@ -37,7 +37,7 @@ const onMouseUpChangeSliderImage = (target) => {
 
     if (newPos >= 350 && newPos <= 650) {
 
-
+        changeWelcomeImagePagination('middle')
 
     } else {
         
@@ -273,6 +273,14 @@ const changeWelcomeImagePagination = (value) => {
             break;
             
         default:
+
+            sliderWelcome.style = `background-position-x: 
+                ${sliderWelcomeObject.firstImagePosition}px,
+                ${sliderWelcomeObject.secondImagePosition}px,
+                ${sliderWelcomeObject.thirdImagePosition}px,
+                ${sliderWelcomeObject.fourthImagePosition}px,
+                ${sliderWelcomeObject.fiveImagePosition}px;`;
+
             break;
     }
 
