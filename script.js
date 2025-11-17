@@ -27,9 +27,6 @@ const sliderWelcomeObject = {
     fourthImagePosition: 3000 + gapBetweenSlides,
     fiveImagePosition:   4000 + gapBetweenSlides,
 
-    isDrag: false,
-    startX: 0,
-
 }
 
 const onMouseUpChangeSliderImage = (target) => {
@@ -38,50 +35,64 @@ const onMouseUpChangeSliderImage = (target) => {
 
     let numberOfPage = document.querySelector('#changable_number');
 
-    if (newPos > centerOfPictureWelcomeBlock) {
+    if (newPos >= 350 && newPos <= 650) {
 
-        if (Number(numberOfPage.textContent) == 1) {
 
-                numberOfPage.textContent = 5;
-                changeWelcomeImagePagination(5);
 
-        } else {
+    } else {
+        
+        if (newPos > centerOfPictureWelcomeBlock) {
 
-            numberOfPage.textContent = Number(numberOfPage.textContent)-1;
-            changeWelcomeImagePagination(numberOfPage.textContent);
+            if (Number(numberOfPage.textContent) == 1) {
 
-        }
+                    numberOfPage.textContent = 5;
+                    changeWelcomeImagePagination(5);
 
-    }
+            } else {
 
-    if (newPos < centerOfPictureWelcomeBlock) {
+                numberOfPage.textContent = Number(numberOfPage.textContent)-1;
+                changeWelcomeImagePagination(numberOfPage.textContent);
 
-        if (Number(numberOfPage.textContent) == 5) {
-
-                numberOfPage.textContent = 1;
-                changeWelcomeImagePagination(1);
-
-        } else {
-
-            numberOfPage.textContent = Number(numberOfPage.textContent)+1;
-            changeWelcomeImagePagination(numberOfPage.textContent);
+            }
 
         }
 
+        if (newPos < centerOfPictureWelcomeBlock) {
+
+            if (Number(numberOfPage.textContent) == 5) {
+
+                    numberOfPage.textContent = 1;
+                    changeWelcomeImagePagination(1);
+
+            } else {
+
+                numberOfPage.textContent = Number(numberOfPage.textContent)+1;
+                changeWelcomeImagePagination(numberOfPage.textContent);
+
+            }
+
+        }
     }
+
 
 
 }
 
 const sliderWelcomeActive = (target) => {
 
-    let startX = target.clientx;
+    let startX = target.clientX;
     let newPos = (startX - positionPictureWelcomeBlock - centerOfPictureWelcomeBlock);
 
-    console.log(newPos, firstImage, newPos + firstImage)
+    console.log(startX- positionPictureWelcomeBlock)
 
-     
+    sliderWelcome.style.backgroundPositionX = `
+        ${sliderWelcomeObject.firstImagePosition + newPos}px,
+        ${sliderWelcomeObject.secondImagePosition + newPos}px,
+        ${sliderWelcomeObject.thirdImagePosition + newPos}px,
+        ${sliderWelcomeObject.fourthImagePosition + newPos}px,
+        ${sliderWelcomeObject.fiveImagePosition + newPos}px`;
 
+    sliderWelcome.style.transition = `0s`;    
 }
 
 const sliderExploreActive = (target) => {
