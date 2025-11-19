@@ -64,6 +64,8 @@
     height: 650px; 
     object-fit: fill;
 
+    cursor: pointer;
+
 }
 
 .control_panel {
