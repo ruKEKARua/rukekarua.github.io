@@ -8,7 +8,7 @@
 
     background-color: #030303;
 
-    
+    overflow: hidden;
 
 }
 
@@ -18,39 +18,98 @@
     height: 810px;
 
     margin: 0 auto;
-
-    background-image: url(/assets/img/welcome-slider/1.jpg);
-    background-repeat: no-repeat;
-    background-size: 1000px 750px;
-    background-position: 440px 0;
 }
+
+.slider_welcome {
+
+    width: 100%;
+    height: 100%;
+    background: no-repeat;
+    background-image: 
+        url(/assets/img/welcome-slider/1.jpg), 
+        url(/assets/img/welcome-slider/2.jpg), 
+        url(/assets/img/welcome-slider/3.jpg), 
+        url(/assets/img/welcome-slider/4.jpg), 
+        url(/assets/img/welcome-slider/5.jpg);
+    background-position-x: 0px, 1015px, 2015px, 3015px, 4015px;
+    transition: 1s;
+
+}
+
+.slider_wrapper_welcome {
+
+    width: 1000px;
+    height: 750px;
+
+    position: relative;
+    top: -1288px;
+    left: 440px;
+
+    cursor: e-resize;
+
+}
+
+
+.shield, .shield2 {
+
+    position: relative;
+    overflow: hidden;
+
+    z-index: 7;
+
+    width: 1000px;
+    height: 750px;
+
+    background-color: #000000;
+
+}
+
+.shield {
+
+    top: -538px;
+    left: -570px;
+
+}
+
+.shield2 {
+
+    top: -2038px;
+    left: 1440px;
+
+}
+
 
 .gradient_monalisa {
 
     display: block;
     position: absolute;
     top: 149px;
-    left: 230px;
-    z-index: 1;
+    left: 220px;
+    z-index: 9;
 
     width: 1000px;
-    height: 752px;
+    height: 810px;
 
     background: #000000;
     background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 23%);
     background-position: 440px;
+
+    pointer-events: none;
 
 }
 
 .welcome .text {
     display: block;
     position: relative;
+    z-index: 10;
+
     width: 600px;
     height: 388px;
 
     padding: 150px 0 0 0;
+    
+    pointer-events: none;
 
-    z-index: 2;
 }
 
 .welcome .title {
@@ -94,6 +153,8 @@
 
     transition: 0.5s;
 
+    pointer-events: auto;
+
 }
 
 .welcome .button a {
@@ -119,14 +180,14 @@
 
     display: block;
     position: relative;
-    z-index: 3;
+    z-index: 10;
 
     width: 600px;
     height: 120px;
 
     background-color: #000000;
 
-    top: 150px;
+    top: -2098px;
     
     margin-left: 840px;
 
