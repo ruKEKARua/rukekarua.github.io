@@ -24,6 +24,11 @@ const videoInfoObject = {
 
     currentTime: 0,
 
+    timelineBlockParams: timeline.getBoundingClientRect(),
+
+    timelineBlockParams: timeline.getBoundingClientRect(),
+    
+
 }
 
 
@@ -90,14 +95,56 @@ volumeImage.addEventListener('click', volumeDisable)
 
 const updateTimeline = () => {
 
-    videoInfoObject.currentTime =  mainVideo.currentTime;
+    videoInfoObject.currentTime =  (mainVideo.currentTime * 100) / mainVideo.duration;
     timeline.style.background = `linear-gradient(90deg, rgb(113, 7, 7) ${videoInfoObject.currentTime}%, rgb(196, 196, 196) 0%)`;
     dotInTimeline.style.left = `${Math.floor(videoInfoObject.currentTime)}%`;
-    console.log(videoInfoObject.currentTime)
+
+    if (videoInfoObject.currentTime == 100) {
+
+        changeImageBigPlay()
+
+    }
 
 }
 
 mainVideo.addEventListener('timeupdate', updateTimeline)
+
+
+const dotTimelineActive = (target) => {
+
+    let newPos = ((target.clientX - videoInfoObject.timelineBlockParams.left) / (videoInfoObject.timelineBlockParams.width)) * 100;
+
+    if ((newPos) > 0 && (newPos) < 100) {
+
+        timeline.style.background = `linear-gradient(90deg, rgb(113, 7, 7) ${newPos}%, rgb(196, 196, 196) 0%)`;
+        dotInTimeline.style.left = `${(newPos-0.8).toFixed(1)}%`;
+
+        mainVideo.currentTime = (mainVideo.duration * (newPos / 100)).toFixed(0);
+
+    }
+
+}
+
+
+const manualChangeTimeline = () => {
+
+    dotInTimeline.addEventListener('mousemove', dotTimelineActive)
+    document.querySelector('#video_journey').addEventListener('mousemove', dotTimelineActive)
+
+}
+
+const declineChangeTimeline = () => {
+    
+    dotInTimeline.removeEventListener('mousemove', dotTimelineActive) 
+    document.querySelector('#video_journey').removeEventListener('mousemove', dotTimelineActive)
+
+}
+
+
+dotInTimeline.addEventListener('mousedown', manualChangeTimeline)
+document.querySelector('#video_journey').addEventListener('mouseup', declineChangeTimeline)
+
+dotInTimeline.ondragstart = () => false
 
 
 
