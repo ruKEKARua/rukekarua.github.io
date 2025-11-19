@@ -6,18 +6,17 @@ const exploreBlock = document.querySelector(".picture");
 const imageBefore = document.querySelector('.image_before');
 const slider = document.querySelector('.slider_block');
 
-const exploreBlockParams = exploreBlock.getBoundingClientRect();
-const welcomeBlockParams = welcomeSliderWrapper.getBoundingClientRect();
-
-const positionPictureExploreBlock = exploreBlockParams.left;
-const positionPictureWelcomeBlock = welcomeBlockParams.left;
-const centerOfPictureWelcomeBlock = 500;
-const maxDistanceForSlider = 700;
-const minDistanceForSlider = -20;
-const maxDistanceForImage = 700;
-const minDistanceForImage = 0;
 const gapBetweenSlides = 15;
-const baseDistanceFromCurrentSlide = 1000;
+
+const sliderExploreObject = {
+
+    positionPictureExploreBlock: exploreBlock.getBoundingClientRect().left,
+    maxDistanceForSlider: 700,
+    minDistanceForSlider: -20,
+    maxDistanceForImage: 700,
+    minDistanceForImage: 0,
+
+}
 
 const sliderWelcomeObject = {
 
@@ -27,11 +26,18 @@ const sliderWelcomeObject = {
     fourthImagePosition: 3000 + gapBetweenSlides,
     fiveImagePosition:   4000 + gapBetweenSlides,
 
+    baseDistanceFromCurrentSlide: 1000,
+
+    positionPictureWelcomeBlock: welcomeSliderWrapper.getBoundingClientRect().left,
+    centerOfPictureWelcomeBlock: welcomeSliderWrapper.getBoundingClientRect().width/2,
+
+    speedDragging: 0.35,
+
 }
 
 const onMouseUpChangeSliderImage = (target) => {
 
-    let newPos = target.clientX - positionPictureWelcomeBlock;
+    let newPos = target.clientX - sliderWelcomeObject.positionPictureWelcomeBlock;
 
     let numberOfPage = document.querySelector('#changable_number');
 
@@ -41,7 +47,7 @@ const onMouseUpChangeSliderImage = (target) => {
 
     } else {
         
-        if (newPos > centerOfPictureWelcomeBlock) {
+        if (newPos > sliderWelcomeObject.centerOfPictureWelcomeBlock) {
 
             if (Number(numberOfPage.textContent) == 1) {
 
@@ -57,7 +63,7 @@ const onMouseUpChangeSliderImage = (target) => {
 
         }
 
-        if (newPos < centerOfPictureWelcomeBlock) {
+        if (newPos < sliderWelcomeObject.centerOfPictureWelcomeBlock) {
 
             if (Number(numberOfPage.textContent) == 5) {
 
@@ -79,40 +85,40 @@ const onMouseUpChangeSliderImage = (target) => {
 }
 
 const sliderWelcomeActive = (target) => {
-
     let startX = target.clientX;
-    let newPos = (startX - positionPictureWelcomeBlock - centerOfPictureWelcomeBlock);
+    let newPos = startX - sliderWelcomeObject.positionPictureWelcomeBlock - sliderWelcomeObject.centerOfPictureWelcomeBlock;
 
-    console.log(startX- positionPictureWelcomeBlock)
-
+    let currentX = newPos * sliderWelcomeObject.speedDragging;
+    
     sliderWelcome.style.backgroundPositionX = `
-        ${sliderWelcomeObject.firstImagePosition + newPos}px,
-        ${sliderWelcomeObject.secondImagePosition + newPos}px,
-        ${sliderWelcomeObject.thirdImagePosition + newPos}px,
-        ${sliderWelcomeObject.fourthImagePosition + newPos}px,
-        ${sliderWelcomeObject.fiveImagePosition + newPos}px`;
+        ${sliderWelcomeObject.firstImagePosition + currentX}px,
+        ${sliderWelcomeObject.secondImagePosition + currentX}px,
+        ${sliderWelcomeObject.thirdImagePosition + currentX}px,
+        ${sliderWelcomeObject.fourthImagePosition + currentX}px,
+        ${sliderWelcomeObject.fiveImagePosition + currentX}px`;
 
     sliderWelcome.style.transition = `0s`;    
+
 }
 
 const sliderExploreActive = (target) => {
 
-    let newPos = target.clientX - positionPictureExploreBlock;
+    let newPos = target.clientX - sliderExploreObject.positionPictureExploreBlock;
 
     slider.style = `left: ${newPos}px;`;
     imageBefore.style = `width: ${newPos+20}px;`;
     
-    if (newPos >= maxDistanceForSlider) {
+    if (newPos >= sliderExploreObject.maxDistanceForSlider) {
 
-        slider.style = `left: ${maxDistanceForSlider}px;`;
-        imageBefore.style = `width: ${maxDistanceForImage}px;`;
+        slider.style = `left: ${sliderExploreObject.maxDistanceForSlider}px;`;
+        imageBefore.style = `width: ${sliderExploreObject.maxDistanceForImage}px;`;
 
     }
 
-    if (newPos <= minDistanceForSlider) {
+    if (newPos <= sliderExploreObject.minDistanceForSlider) {
 
-        slider.style = `left: ${minDistanceForSlider}px;`;
-        imageBefore.style = `width: ${minDistanceForImage}px;`;
+        slider.style = `left: ${sliderExploreObject.minDistanceForSlider}px;`;
+        imageBefore.style = `width: ${sliderExploreObject.minDistanceForImage}px;`;
 
     }
 
@@ -142,7 +148,7 @@ const handleRemoveSliderWelcomeListener = () => {
 }
 
 const handleSliderWelcome = () => {
-
+    
     welcomeSliderWrapper.addEventListener('mouseup', handleRemoveSliderWelcomeListener);
     welcomeSliderWrapper.addEventListener('mousemove', sliderWelcomeActive);
     sliderWelcome.addEventListener('mouseup', onMouseUpChangeSliderImage);
