@@ -1,5 +1,5 @@
 import { updateControlPanel } from "./updateControlPanel.js";
-import { updateTimeline } from "./timeline.js";
+import { updateTimeline, dotTimelineActive } from "./timeline.js";
 import { changeImageBigPlay } from "./playButton.js";
 import { volumeDisable, dotInVolumeActive } from "./volume.js";
 
@@ -24,8 +24,8 @@ const videoInfoObject = {
     isPlay: false,
     isVolumeOn: true,
 
-    bufferVolumeValue: 38,
-    volumeValue: 38,
+    bufferVolumeValue: 36,
+    volumeValue: 36,
 
     currentTime: 0,
 
@@ -42,31 +42,30 @@ bigPlayButton.addEventListener('click', changeImageBigPlay); /* секция о�
 mainVideo.addEventListener('click', changeImageBigPlay);
 playButtonInPanel.addEventListener('click', changeImageBigPlay);
 
-
-
-volumeImage.addEventListener('click', volumeDisable) /* секция отвечающая за включение/отключение звука и его изменение */
+volumeImage.addEventListener('click', () => videoInfoObject.isVolumeOn == true ? volumeDisable(false) : volumeDisable(true)) /* секция отвечающая за включение/отключение звука и его изменение */
 
 // считывание движение курсора при захвате точки
 const dotInVolumeHandler = () => {
 
-    dotInTimelineHandler.addEventListener('mousemove', dotInVolumeActive)
+    dotInVolume.addEventListener('mousemove', dotInVolumeActive)
     document.querySelector('#video_journey').addEventListener('mousemove', dotInVolumeActive)
 
 
 }
 
 // отключение считывания
-const disableDotHandlerInVolumeLibne = () => {
+const disableDotHandlerInVolumeLine = () => {
 
-    dotInVolumeHandler.removeEventListener('mousemove', dotInVolumeActive)
-    document.querySelector('#video_journey').removeEventListener('mouseup', disableDotHandlerInVolumeLibne)
+    dotInVolume.removeEventListener('mousemove', dotInVolumeActive) 
+    document.querySelector('#video_journey').removeEventListener('mousemove', dotInVolumeActive)
 
 }
 
-dotInTimeline.addEventListener('mousedown', dotInVolumeHandler)
+dotInVolume.addEventListener('mousedown', dotInVolumeHandler)
 volumeLine.addEventListener('mousedown', dotInVolumeHandler)
-document.querySelector('#video_journey').addEventListener('mouseup', disableDotHandlerInVolumeLibne)
+document.querySelector('#video_journey').addEventListener('mouseup', disableDotHandlerInVolumeLine)
 
+dotInVolume.ondragstart = () => false // функция, чтобы точка не раздваивалась при перемещении
 
 /* удержание точки на таймлайне для изменения тайминга видео, а также секция отвечающая за таймлайн*/
 const dotInTimelineHandler = (target) => {
@@ -93,7 +92,7 @@ dotInTimeline.addEventListener('mousedown', dotInTimelineHandler)
 timeline.addEventListener('mousedown', dotInTimelineHandler)
 document.querySelector('#video_journey').addEventListener('mouseup', disableDotHandlerInTimeline)
 
-dotInTimeline.ondragstart = () => false
+dotInTimeline.ondragstart = () => false // функция, чтобы точка не раздваивалась при перемещении
 
 
 
