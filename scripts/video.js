@@ -117,7 +117,7 @@ const dotTimelineActive = (target) => {
     if ((newPos) > 0 && (newPos) < 100) {
 
         timeline.style.background = `linear-gradient(90deg, rgb(113, 7, 7) ${newPos}%, rgb(196, 196, 196) 0%)`;
-        dotInTimeline.style.left = `${(newPos-0.8).toFixed(1)}%`;
+        dotInTimeline.style.left = `${(newPos-0.8)}%`;
 
         mainVideo.currentTime = (mainVideo.duration * (newPos / 100)).toFixed(0);
 
@@ -126,7 +126,12 @@ const dotTimelineActive = (target) => {
 }
 
 
-const dotInTimelineHandler = () => {
+const dotInTimelineHandler = (target) => {
+
+    let newPos = ((target.clientX - videoInfoObject.timelineBlockParams.left) / (videoInfoObject.timelineBlockParams.width)) * 100;
+
+    timeline.style.background = `linear-gradient(90deg, rgb(113, 7, 7) ${newPos}%, rgb(196, 196, 196) 0%)`;
+    dotInTimeline.style.left = `${(newPos-0.8)}%`;
 
     dotInTimeline.addEventListener('mousemove', dotTimelineActive)
     document.querySelector('#video_journey').addEventListener('mousemove', dotTimelineActive)
