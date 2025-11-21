@@ -26,7 +26,7 @@ const videoInfoObject = {
 
     timelineBlockParams: timeline.getBoundingClientRect(),
 
-    timelineBlockParams: timeline.getBoundingClientRect(),
+    volumeBlockParams: volumeLine.getBoundingClientRect(),
     
 
 }
@@ -126,14 +126,14 @@ const dotTimelineActive = (target) => {
 }
 
 
-const manualChangeTimeline = () => {
+const dotInTimelineHandler = () => {
 
     dotInTimeline.addEventListener('mousemove', dotTimelineActive)
     document.querySelector('#video_journey').addEventListener('mousemove', dotTimelineActive)
 
 }
 
-const declineChangeTimeline = () => {
+const disableDotHandlerInTimeline = () => {
     
     dotInTimeline.removeEventListener('mousemove', dotTimelineActive) 
     document.querySelector('#video_journey').removeEventListener('mousemove', dotTimelineActive)
@@ -141,8 +141,9 @@ const declineChangeTimeline = () => {
 }
 
 
-dotInTimeline.addEventListener('mousedown', manualChangeTimeline)
-document.querySelector('#video_journey').addEventListener('mouseup', declineChangeTimeline)
+dotInTimeline.addEventListener('mousedown', dotInTimelineHandler)
+timeline.addEventListener('mousedown', dotInTimelineHandler)
+document.querySelector('#video_journey').addEventListener('mouseup', disableDotHandlerInTimeline)
 
 dotInTimeline.ondragstart = () => false
 
