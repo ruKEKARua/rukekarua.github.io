@@ -191,6 +191,8 @@
 
     background: linear-gradient(90deg, rgb(113, 7, 7) 38%, rgb(196, 196, 196) 1%);
 
+    cursor: pointer;
+
 }
 
 .control_panel .volume_block .volume_line .dot {

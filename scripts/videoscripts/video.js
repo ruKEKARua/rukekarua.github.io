@@ -45,11 +45,19 @@ playButtonInPanel.addEventListener('click', changeImageBigPlay);
 volumeImage.addEventListener('click', () => videoInfoObject.isVolumeOn == true ? volumeDisable(false) : volumeDisable(true)) /* секция отвечающая за включение/отключение звука и его изменение */
 
 // считывание движение курсора при захвате точки
-const dotInVolumeHandler = () => {
+const dotInVolumeHandler = (target) => {
+    let newPos = (((target.clientX - videoInfoObject.volumeBlockParams.left) / (videoInfoObject.volumeBlockParams.width)) * 100) - 4;
+
+    volumeLine.style.background = `linear-gradient(90deg, rgb(113, 7, 7) ${newPos}%, rgb(196, 196, 196) 0%)`;
+    dotInVolume.style.left = `${(newPos)}%`;
+
+    videoInfoObject.bufferVolumeValue = newPos;
+    videoInfoObject.volumeValue = newPos;
+
+    volumeDisable(true)
 
     dotInVolume.addEventListener('mousemove', dotInVolumeActive)
     document.querySelector('#video_journey').addEventListener('mousemove', dotInVolumeActive)
-
 
 }
 
