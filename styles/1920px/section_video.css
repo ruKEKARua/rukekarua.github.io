@@ -1,0 +1,450 @@
+
+.video_journey {
+
+    width: 100%;
+    height: 1246px;
+
+    margin-top: 75px;
+
+}
+
+.video_journey_wrapper {
+
+    width: 1440px;
+    height: 1246px;
+
+    margin: 0 auto;
+
+}
+
+.video_journey .head_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-bottom: 69px;
+}
+
+.video_journey .head_wrapper h2 {
+
+    width: 670px;
+    height: 90px;
+
+    color: rgba(157, 134, 101, 1);
+
+}
+
+.video_journey .head_wrapper p {
+
+    display: flex;
+
+    width: 720px;
+    height: 90px;
+
+    font-weight: 300;
+    font-size: 22px;
+
+    line-height: 38.5px;
+    letter-spacing: 0%;
+    
+    padding-top: 6px;
+
+}
+
+
+.video_block {
+
+    height: 1029px;
+
+}
+
+.video_block .main_video video {
+
+    width: 100%; 
+    height: 650px; 
+    object-fit: fill;
+
+    cursor: pointer;
+
+}
+
+.control_panel {
+
+    height: 85px;
+    background-color: black;
+
+    position: relative;
+    left: 0px;
+    top:  -4px;
+    right: 0px;
+    bottom: 0;
+
+}
+
+.control_panel .control_panel_wrapper {
+
+    display: flex;
+
+    position: relative;
+    left: 0px;
+    top:  -220px;
+    right: 0px;
+    bottom: 0;
+
+}
+
+.control_panel .button_play_by_panel {
+
+    width: 30px;
+    height: 30px;
+
+    margin: 27px 50px 27px 30px;
+    cursor: pointer;
+
+}
+
+.button_play_by_panel_image {
+
+    width: 23px;
+    height: 30px;
+
+    background: url(/assets/img/video/play_in_conrol_panel.svg) no-repeat;
+    background-position: 0px;
+    background-size: 100%;
+
+}
+
+.control_panel .timeline_block {
+
+    display: flex;
+    align-items: center;
+
+    width: 992px;
+
+}
+
+.control_panel .timeline_block .timeline {
+
+    width: 929px;
+    height: 8px;
+
+    margin-left: -7px;
+
+    background: linear-gradient(90deg, rgb(113, 7, 7), rgb(196, 196, 196) 1%);
+    
+    cursor: pointer;
+
+}
+
+.dot {
+
+    width: 15px;
+    height: 15px;
+
+    background: url(/assets/img/video/dot.svg) no-repeat;
+    background-position: 0px;
+    background-size: 100%;
+
+    position: relative;
+    top: -4px;
+
+    cursor: pointer;
+
+}
+
+.control_panel .timeline_block .timeline .dot {
+
+    left: 0%;
+    
+}
+
+.control_panel .volume_block {
+
+    display: flex;
+    align-items: center;
+
+    width: 243px;
+
+}
+
+.control_panel .volume_image_wrapper {
+    cursor: pointer;
+}
+
+.volume_image {
+
+    width: 38px;
+    height: 31px;
+
+    background: url(/assets/img/video/volume.svg) no-repeat;
+    background-position: 0px;
+    background-size: 100%;
+
+}
+
+.control_panel .volume_block .volume_line {
+
+    width: 155px;
+    height: 8px;
+
+    margin-left: 50px;
+
+    background: linear-gradient(90deg, rgb(113, 7, 7) 38%, rgb(196, 196, 196) 1%);
+
+    cursor: pointer;
+
+}
+
+.control_panel .volume_block .volume_line .dot {
+
+    left: 36%;
+
+}
+
+.control_panel .fullscreen_wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 95px;
+    margin: 0 0 0 20px;
+
+    cursor: pointer;
+
+}
+
+.fullscreen_image {
+
+    width: 35px;
+    height: 35px;
+
+    background: url(/assets/img/video/fullscreen_on.svg) no-repeat;
+    background-position: 0px;
+    background-size: 100%;
+
+}
+
+
+
+.control_panel .button_play {
+
+    width: 220px;
+    height: 220px;
+
+    position: relative;
+
+    left: 610px;
+    top: -435px;
+    right: 0px;
+    bottom: 0px;
+
+    cursor: pointer;
+
+    background-image: url(/assets/img/video/play.svg);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 100%;
+
+}
+
+.control_panel .button_play svg:nth-child(1) {
+
+    position: relative;
+    left: 77px;
+    top: 50px;
+    right: 0px;
+    bottom: 0px;
+
+}
+.control_panel .button_play svg:nth-child(2) {
+
+    position: relative;
+    left: 0px;
+    top: -121px;
+    right: 0px;
+    bottom: 0px;
+
+}
+
+
+
+.youtube_videos {
+
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+
+    margin-top: 40px;
+
+    height: 254px;
+
+    overflow: hidden;
+
+}
+
+.youtube_video {
+    width: 452px;
+    height: 254px;
+}
+
+.video {
+    
+    position: relative;
+    z-index: 0;
+
+    bottom: 40px;
+
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.youtube_play_button {
+
+    width: 68px;
+    height: 48px;
+
+    position: relative;
+    bottom: 157px;
+    left: 192px;
+
+    background-image: url(/assets/img/video/youtube_play.svg);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 100%;
+
+}
+
+.video_title {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+
+    position: relative;
+    top: 15px;
+    left: 10px;
+    z-index: 1;
+
+    width: 406px;
+    height: 40px;
+}
+
+.video_title .avatar {
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url(/assets/img/avatar.jpg);
+    background-color: #ffffff00;
+    background-repeat: no-repeat;
+    background-size: 50px 40px;
+    background-position: -5px;
+    border-radius: 50%;
+
+}
+
+.video_name {
+
+    width: 330px;
+    height: 39px;
+
+    color: rgba(255, 255, 255, 1);
+
+    margin: 0 23px 0 10px;
+
+    font-weight: 400;
+    font-size: 18px;
+
+    line-height: 38.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+
+
+.dots {
+
+    display: none;
+
+    width: 4px;
+    height: 18px;
+
+    padding: 13px 0 0 0;
+
+    background-image: url(/assets/img/video/youtube_dots.svg);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 100%;
+
+}
+
+
+.video_block .pages {
+
+    width: 1440px;
+    height: 12px;
+
+}
+
+.video_block .pages_wrapper {
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 40px auto 0 auto;
+
+    width: 200px;
+    height: 12px;
+
+}
+
+.arrow_button_left, .arrow_button_right {
+
+    width: 10px;
+    height: 12px;
+    
+    background-image: url(/assets/img/video/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 100%;
+
+    cursor: pointer;
+
+}
+
+.arrow_button_right {
+
+    transform: rotate(180deg);
+
+}
+
+.circle {
+
+    width: 12px;
+    height: 12px;
+
+    background: rgba(153, 153, 153, 1);
+    border-radius: 100%;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+
+}
+
+.circle:hover {
+
+    transition: 0.2s;
+    background: rgba(113, 7, 7, 1);
+
+}
+
+.circle_active {
+
+    background: rgba(51, 51, 51, 1);
+
+}

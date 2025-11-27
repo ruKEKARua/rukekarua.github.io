@@ -1,0 +1,71 @@
+.visiting {
+
+    height: 1313px;
+
+    margin-top: 65px;
+
+}
+
+.visiting_wrapper {
+
+    width: 984px;
+
+}
+
+.visiting .title {
+
+    height: 95px;
+
+}
+
+.tours {
+
+    justify-content: center;
+    gap: 60px 108px;
+
+    margin-top: 65px;
+
+}
+
+.tour {
+
+    width: 330px;
+    height: 345px;
+
+}
+
+.tour_title {
+
+    font-weight: 400;
+    font-size: 28px;
+
+    line-height: 100%;
+    letter-spacing: 3px;
+
+    border-bottom: 2px solid rgba(113, 7, 7, 1);
+
+    margin: 20px 0 10px 0;
+
+}
+
+.tour_type {
+
+
+    font-weight: 200;
+    font-size: 20px;
+    
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+
+.view_type {
+
+    font-weight: 200;
+    font-size: 16px;
+    
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}

@@ -1,0 +1,197 @@
+
+
+
+footer {
+
+    width: 100%;
+    height: 392px;
+
+    background-color: rgba(3, 3, 3, 1);
+    color: white;
+
+    margin-top: 75px;
+    
+}
+
+.footer_wrapper {
+
+    width: 1440px;
+    height: 100%;
+
+    margin: 0 auto;
+
+}
+
+footer .block_top {
+
+    display: flex;
+    
+    height: 265px;
+    
+}
+
+
+footer .logo {
+
+    width: 340px;
+    
+    padding-top: 83px;
+
+    font-weight: 400;
+    font-size: 28px;
+
+    line-height: 100%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    
+}
+
+.footer_navigation {
+
+    width: 760px;
+    height: 130px;
+
+    margin-top: 87px;
+
+    font-weight: 200;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 2px;
+
+
+}
+
+.footer_navigation ul {
+
+    display: flex;
+
+}
+
+.footer_navigation ul li {
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer_navigation ul li:nth-child(1) {
+
+    margin-right: 170px;
+
+}
+
+.footer_navigation ul li:nth-child(1) a:nth-child(2), .footer_navigation ul li:nth-child(2) a:nth-child(2) {
+
+    margin: 30px 0;
+
+}  
+
+.footer_social {
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 340px;
+    height: 50px;
+
+    margin-top: 160px;
+
+}
+
+.footer_social div {
+
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid rgba(102, 102, 102, 1);
+    border-radius: 50%;
+
+    transition: 0.5s;
+
+}
+
+.footer_social div:hover {
+
+    border: 1px solid rgba(157, 134, 101, 1);
+
+    transition: 0.5s;
+
+}
+
+.footer_social svg, .footer_social a {
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    position: relative;
+    top: 6px;
+    left: 6px;
+
+}
+
+
+footer .block_bottom {
+
+    display: flex;
+
+    height: 124px;
+    
+    font-weight: 200;
+    font-size: 22px;
+
+    line-height: 22px;
+    letter-spacing: 2px;
+
+
+}
+
+footer .block_bottom div {
+
+    height: 25px;
+    margin: auto;
+
+}
+
+footer .block_bottom div:nth-child(1) {
+
+    width: 570px;
+
+}
+
+footer .block_bottom div:nth-child(2) {
+
+    width: 305px;
+
+    text-align: center;
+
+    margin: auto;
+
+
+}
+
+footer .block_bottom div:nth-child(3) {
+
+    width: 570px;
+    text-align: end;
+
+}
+
+
+
+
+
+
+.footer_border {
+    
+    width: 100%;
+
+    border-bottom: 3px solid rgba(102, 102, 102, 1);
+
+    position: relative;
+    bottom: 130px;
+
+}

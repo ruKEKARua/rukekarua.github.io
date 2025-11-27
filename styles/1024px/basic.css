@@ -1,0 +1,26 @@
+@import url("header.css");
+@import url("section_welcome.css");
+@import url("section_visiting.css");
+@import url("section_explore.css");
+@import url("section_video.css");
+@import url("section_gallery.css");
+@import url("section_tickets.css");
+@import url("section_contacts.css");
+@import url("footer.css");
+
+
+html {
+
+    scrollbar-width: none
+
+}
+
+h2 {
+
+    font-weight: 400;
+    font-size: 50px;
+
+    line-height: 75px;
+    letter-spacing: 5px;
+
+}

@@ -1,0 +1,320 @@
+
+.welcome {
+
+    width: 100%;
+    height: 810px;
+
+    color: white;
+
+    background-color: #030303;
+
+    overflow: hidden;
+
+}
+
+.welcome_wrapper {
+
+    width: 1440px;
+    height: 810px;
+
+    margin: 0 auto;
+}
+
+.slider_welcome {
+
+    width: 100%;
+    height: 100%;
+    background: no-repeat;
+    background-image: 
+        url(/assets/img/welcome-slider/1.jpg), 
+        url(/assets/img/welcome-slider/2.jpg), 
+        url(/assets/img/welcome-slider/3.jpg), 
+        url(/assets/img/welcome-slider/4.jpg), 
+        url(/assets/img/welcome-slider/5.jpg);
+    background-position-x: 0px, 1015px, 2015px, 3015px, 4015px;
+    transition: 1s;
+
+}
+
+.slider_wrapper_welcome {
+
+    width: 1000px;
+    height: 750px;
+
+    position: relative;
+    top: -1288px;
+    left: 440px;
+
+    cursor: e-resize;
+
+}
+
+
+.shield, .shield2 {
+
+    position: relative;
+    overflow: hidden;
+
+    z-index: 7;
+
+    width: 1000px;
+    height: 750px;
+
+    background-color: #000000;
+
+}
+
+.shield {
+
+    top: -538px;
+    left: -570px;
+
+}
+
+.shield2 {
+
+    top: -2038px;
+    left: 1440px;
+
+}
+
+
+.gradient_monalisa {
+
+    display: block;
+    position: absolute;
+    top: 149px;
+    left: 220px;
+    z-index: 9;
+
+    width: 1000px;
+    height: 810px;
+
+    background: #000000;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 23%);
+    background-position: 440px;
+
+    pointer-events: none;
+
+}
+
+.welcome .text {
+    display: block;
+    position: relative;
+    z-index: 10;
+
+    width: 600px;
+    height: 388px;
+
+    padding: 150px 0 0 0;
+    
+    pointer-events: none;
+
+}
+
+.welcome .title {
+
+    width: 600px;
+    word-break: break-all;
+
+    height: 180px;
+
+}
+
+.welcome .text p {
+
+    margin-top: 25px;
+
+    font-weight: 300;
+    font-size: 28px;
+
+    line-height: 100%;
+    letter-spacing: 2px;
+
+}
+
+.welcome .button {
+
+    width: 360px;
+    height: 75px;
+
+    margin-top: 75px;
+
+    font-weight: 300;
+    font-size: 22px;
+
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    align-content: center;
+
+    background-color: #710707;
+    border-radius: 10px;
+
+    transition: 0.5s;
+
+    pointer-events: auto;
+
+}
+
+.welcome .button a {
+    display: block;
+
+    align-content: center;
+    width: 360px;
+    height: 75px;
+}
+
+.welcome .button:hover {
+    
+    background-color: rgba(157, 134, 101, 1);
+
+}
+
+.welcome .button a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.pagination {
+
+    display: block;
+    position: relative;
+    z-index: 10;
+
+    width: 600px;
+    height: 120px;
+
+    background-color: #000000;
+
+    top: -2098px;
+    
+    margin-left: 840px;
+
+}
+
+.pagination_wrapper {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    font-size: 22px;
+
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+
+    padding-top: 40px;
+
+
+}
+
+.pagination .numbers  {
+
+    position: relative;
+    left: 8px;
+
+    width: 76px;
+    height: 40px;
+
+
+
+}
+
+.pagination .numbers p {
+    padding: 0;
+    margin: 0;
+}
+
+
+.pagination .numbers div {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.pagination .pages {
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 180px;
+    height: 16px;
+
+}
+
+.pagination .page {
+
+    position: relative;
+    right: 3px;
+
+    width:  16px;
+    height: 16px;
+
+    background-color: rgba(255, 255, 255, 1);
+    transition: 0.2s;
+
+    cursor: pointer;
+
+}
+
+.pagination .page:hover {
+    background-color: rgba(157, 134, 101, 1);
+    transition: 0.2s;
+}
+
+#active {
+
+    background-color: rgba(210, 177, 131, 1);
+    transition: 0.2s;
+
+}
+
+.pagination .change_page {
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    right: 10px;
+
+    width: 80px;
+    height: 8px;
+
+}
+
+.arrow_left svg:hover {
+    fill: rgba(157, 134, 101, 1);
+}
+
+.pagination .arrow_left, .pagination .arrow_right {
+    
+    width: 30px;
+    height: 8px;
+
+    background: url(/assets/img/arrow_welcome.png) no-repeat;
+    background-position: 0px;
+    background-size: 100%;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.pagination .arrow_left:hover, .pagination .arrow_right:hover {
+
+    background: url(/assets/img/arrow_welcome_hover.png) no-repeat;
+    background-position: 0px;
+    background-size: 100%;
+
+    transition: 0.2s;
+
+}
+
+.pagination .arrow_right {
+
+    transform: rotate(180deg);
+
+}

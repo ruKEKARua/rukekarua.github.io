@@ -1,0 +1,80 @@
+.explore {
+
+    height: 1149px;
+
+    margin-top: 60px;
+
+}
+
+.explore_wrapper {
+
+    flex-direction: column;
+
+    width: 984px;
+
+    padding-top: 60px;
+
+}
+
+.explore h2 {
+
+    width: 100%;
+    height: 95px;
+
+}
+
+.explore .text_block {
+
+    width: 100%;
+    height: 330px;
+
+}
+
+.explore .text {
+
+    width: 100%;
+
+    margin-top: 58px;
+
+    font-weight: 300;
+    font-size: 20px;
+
+    line-height: 38.5px;
+    letter-spacing: 0;
+
+}
+
+.explore .text span {
+
+    font-weight: 300;
+    font-size: 20px;
+
+    line-height: 35px;
+    letter-spacing: 0%;
+
+}
+
+.explore .text p:nth-child(2) {
+
+    margin: 0;
+
+}
+
+.explore .text p:nth-child(3) {
+
+    display: none;
+
+}
+
+
+.explore .picture {
+
+    margin: 0 auto;
+
+}
+
+.slider_block {
+
+    cursor: none;
+
+}

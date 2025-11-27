@@ -1,0 +1,169 @@
+@import url("header.css");
+@import url("section_welcome.css");
+@import url("section_visiting.css");
+@import url("section_explore.css");
+@import url("section_video.css");
+@import url("section_gallery.css");
+@import url("section_tickets.css");
+@import url("section_contacts.css");
+@import url("footer.css");
+
+html {
+    scroll-behavior: smooth2 ;
+}
+
+
+/* ШРИФТЫ */
+
+
+@font-face {
+    font-family: "Forum";
+    src: url("/styles/fonts/Forum/Forum-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+
+    font-family: "Roboto";
+    src: url("/styles/fonts/Roboto/static/Roboto-Thin.ttf");
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/styles/fonts/Roboto/static/Roboto-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/styles/fonts/Roboto/static/Roboto-Bold.ttf");
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/styles/fonts/Roboto/static/Roboto-Medium.ttf");
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.forum {
+    font-family: "Forum";
+
+}
+
+.roboto-thin {
+    font-family: "Roboto";
+    font-weight: 200;
+
+}
+
+.roboto-normal {
+    font-family: "Roboto";
+    font-weight: 300;
+
+}
+
+.roboto-bold {
+    font-family: "Roboto";
+    font-weight: 600;
+
+}
+
+.roboto-medium {
+    font-family: "Roboto";
+    font-weight: 400;
+
+}
+
+/* ШРИФТЫ */
+
+/* БАЗОВЫЕ СТИЛИ САЙТА */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+
+    transition: 0.5s;
+
+    font-weight: 200;
+}
+
+a:hover {
+    color: #9D8665;
+
+    transition: 0.5s;
+}
+
+a:active {
+    color: #7E6C51;
+}
+
+p, h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: none;
+    background: none;
+    outline: none;
+    appearance: textfield; 
+}
+
+h2 {
+
+    font-family: forum;
+    font-weight: 400;
+    font-size: 80px;
+
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+video {
+
+    width: 452px;
+    height: 254px;
+
+}
+
+.main_wrapper {
+
+    width: 100%;
+
+}
+
+ul {
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+/* БАЗОВЫЕ СТИЛИ САЙТА */
+

@@ -1,0 +1,72 @@
+.contacts {
+
+    width: 1024px;
+    height: 614px;
+
+    margin-top: 65px;
+
+}
+
+.contacts_wrapper {
+
+    width: 984px;
+
+}
+
+.contacts_wrapper h2 {
+
+    height: 90px;
+
+}
+
+.contacts .block_info {
+
+    margin-top: 65px;
+
+}
+
+.contacts .block_info .text_block .header_text {
+
+    width: 200px;
+
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 24px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.contacts .block_info .text_block {
+
+    width: 290px;
+
+}
+
+.contacts .block_info .text_block .contact_info {
+
+    height: 100px;
+
+}
+
+.contacts .block_info .text_block .contact_info a, .contacts .block_info .text_block .contact_info address {
+
+    font-weight: 300;
+    font-size: 20px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.contacts .block_info .map_block {
+
+    width: 694px;
+    height: 454px;
+
+    background-position: -278px -8px;
+    background-size: 140% 138%;
+
+}

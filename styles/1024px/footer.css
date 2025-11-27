@@ -1,0 +1,69 @@
+.footer_wrapper {
+
+    width: 984px;
+
+}
+
+footer {
+
+    margin-top: 55px   
+
+}
+
+footer .block_top {
+
+    height: 245px;
+
+}
+
+.footer_border {
+
+    bottom: 150px;
+}
+
+footer .logo {
+
+    width: 239px;
+
+    padding-top: 64px;
+
+}
+
+.footer_navigation {
+
+    width: 405px;
+
+    margin-top: 67px;
+
+}
+
+.footer_navigation ul div:nth-child(1) {
+
+    margin-right: 121px;
+
+}
+
+
+.footer_social {
+
+    margin-top: 145px;
+
+}
+
+footer .block_bottom div:nth-child(1) {
+
+    width: 330px;
+
+}
+
+footer .block_bottom div:nth-child(2) {
+
+    width: 405px;
+
+}
+
+footer .block_bottom div:nth-child(3) {
+
+    width: 327px;
+
+}

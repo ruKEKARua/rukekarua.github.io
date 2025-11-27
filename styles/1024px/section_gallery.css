@@ -1,0 +1,42 @@
+.art_gallery {
+
+    height: 1460px;
+
+    margin-top: 60px;
+
+}
+
+.art_gallery_wrapper {
+
+    width: 984px;
+    height: 1400px;
+
+}
+
+.art_gallery .title {
+
+    padding: 60px 0;
+
+}
+
+.arts {
+
+    height: 1265px;
+
+}
+
+.art_image {
+
+    width: 304px;
+    
+}
+
+.gradient_art {
+
+    width: 239px;
+    height: 1004px;
+
+    bottom: 562px;
+    left: 383px;
+
+}

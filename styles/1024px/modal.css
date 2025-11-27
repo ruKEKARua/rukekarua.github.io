@@ -1,0 +1,28 @@
+.booking_modal {
+
+    height: 768px;
+
+    bottom: 600px;
+
+}
+
+.modal_wrapper {
+
+    width: 100%;
+
+}
+
+.form_wrapper {
+
+    margin: 15px 0px 0 27px;
+
+    right: 0;
+
+}
+
+.close_button {
+
+    top: -705px;
+    left: 505px;
+
+}
