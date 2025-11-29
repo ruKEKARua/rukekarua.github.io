@@ -4,6 +4,7 @@ import { volumeDisable, dotInVolumeActive } from "./volume.js";
 import { fullscreenHandler, isFullscreenChanged } from "./fullscreen.js";
 import { keybindingsHandler } from "./keybinds.js";
 import { changeMainVideo } from "./changeVideo.js";
+import { changePage } from "./videoSlider.js";
 
 const mainVideo = document.querySelector('.main_video').querySelector('video');
 const youtubeVideos = document.querySelectorAll('.youtube_video');
@@ -20,6 +21,9 @@ const volumeLine = controlPanel.querySelector('.volume_line');
 const dotInVolume = volumeLine.querySelector('.dot');
 
 const fullscreen = controlPanel.querySelector('.fullscreen_wrapper');
+
+const arrowLeft = document.querySelector('.arrow_button_left')
+const arrowRight = document.querySelector('.arrow_button_right')
 
 
 const videoInfoObject = {
@@ -45,52 +49,6 @@ const videoInfoObject = {
     
 
 }
-
-const videoSliderArray = [
-
-    {
-        videoName: 'video0',
-        videoTitle: 'Louvre Intro',
-        videoPoster: 'poster0'
-    },
-    {
-        videoName: 'video3',
-        videoTitle: 'Exposition - Le Corps et l’Ame. De Dona...',
-        videoPoster: 'poster3'
-    },
-    {
-        videoName: 'video1',
-        videoTitle: 'Au Louvre ! La Venus de Milo',
-        videoPoster: 'poster1'
-    },
-    {
-        videoName: 'video2',
-        videoTitle: 'Promenade dans les collections mesop...',
-        videoPoster: 'poster2'
-    },
-    {
-        videoName: 'video4',
-        videoTitle: 'La ruse du renad',
-        videoPoster: 'poster4'
-    },
-    {
-        videoName: 'video5',
-        videoTitle: 'Les babouins de Louxor sont de retour au Louvre',
-        videoPoster: 'poster5'
-    },
-    {
-        videoName: 'video6',
-        videoTitle: 'Nouveau Louvre : first images',
-        videoPoster: 'poster6'
-    },
-    {
-        videoName: 'video7',
-        videoTitle: 'The Louvre: 800 years of history',
-        videoPoster: 'poster7'
-    },
-    
-
-];
 
 
 bigPlayButton.addEventListener('click', changeImageBigPlay); /* секция отвечающая за включение/выключение видео */
@@ -189,4 +147,11 @@ youtubeVideos.forEach((element) => {
 })
 
 
-export {videoInfoObject, videoSliderArray};
+
+// блок отвечающий за переключение слайдера
+
+arrowLeft.addEventListener('click', changePage)
+arrowRight.addEventListener('click', changePage)
+
+
+export {videoInfoObject};

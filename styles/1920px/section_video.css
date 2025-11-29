@@ -393,7 +393,7 @@
 .video_block .pages_wrapper {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     margin: 40px auto 0 auto;
 

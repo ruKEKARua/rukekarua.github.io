@@ -1,5 +1,4 @@
 import { videoInfoObject } from "./video.js";
-import { videoSliderArray } from "./video.js";
 import { updateControlPanel } from "./updateControlPanel.js";
 
 const mainVideo = document.querySelector('.main_video').querySelector('video');
