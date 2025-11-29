@@ -4,7 +4,7 @@ import { volumeDisable, dotInVolumeActive } from "./volume.js";
 import { fullscreenHandler, isFullscreenChanged } from "./fullscreen.js";
 import { keybindingsHandler } from "./keybinds.js";
 import { changeMainVideo } from "./changeVideo.js";
-import { changePage } from "./videoSlider.js";
+import { moveSlider } from "./videoSlider.js";
 
 const mainVideo = document.querySelector('.main_video').querySelector('video');
 const youtubeVideos = document.querySelectorAll('.youtube_video');
@@ -150,8 +150,8 @@ youtubeVideos.forEach((element) => {
 
 // блок отвечающий за переключение слайдера
 
-arrowLeft.addEventListener('click', changePage)
-arrowRight.addEventListener('click', changePage)
+arrowLeft.addEventListener('click', moveSlider)
+arrowRight.addEventListener('click', moveSlider)
 
 
 export {videoInfoObject};

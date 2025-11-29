@@ -269,7 +269,7 @@
 
 
 
-.youtube_videos {
+.youtube_videos, .youtube_videos .first_page, .youtube_videos .second_page {
 
     display: flex;
     flex-direction: row;
@@ -280,6 +280,15 @@
     height: 254px;
 
     overflow: hidden;
+
+}
+
+.youtube_videos .first_page, .youtube_videos .second_page {
+
+    margin-top: 0;
+    overflow: visible;
+    
+    transition: 1s;
 
 }
 
