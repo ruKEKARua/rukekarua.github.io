@@ -5,16 +5,19 @@ const mainVideo = document.querySelector('.main_video').querySelector('video');
 
 const changeMainVideo = (event) => {
 
-    if (event.target.localName == 'video') {
+    const tagName = event.target.localName;
+    const className = event.target.classList[0];
 
-        const parentID = event.target.closest('div').parentElement;
+    if (tagName == 'video' || className == 'youtube_play_button') {
+
+        const parentID = className == 'youtube_play_button' ? event.target.closest('div').parentElement.parentElement : event.target.closest('div').parentElement;
 
         const videoElement = parentID.querySelector('video');
         const videoName = parentID.querySelector('.video_name').textContent;
 
-        const targetURL = videoElement.src
-        const targetPoster = videoElement.poster
-        const targetID = parentID.id
+        const targetURL = videoElement.src;
+        const targetPoster = videoElement.poster;
+        const targetID = parentID.id;
 
 
 
