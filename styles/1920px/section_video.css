@@ -64,8 +64,6 @@
     height: 650px; 
     object-fit: fill;
 
-    cursor: pointer;
-
 }
 
 .control_panel {
@@ -108,7 +106,7 @@
     width: 23px;
     height: 30px;
 
-    background: url(/assets/img/video/play_in_conrol_panel.svg) no-repeat;
+    background: url(/assets/img/video/play_in_conrol_panel.png) no-repeat;
     background-position: 0px;
     background-size: 100%;
 
@@ -131,8 +129,6 @@
     margin-left: -7px;
 
     background: linear-gradient(90deg, rgb(113, 7, 7), rgb(196, 196, 196) 1%);
-    
-    cursor: pointer;
 
 }
 
@@ -141,7 +137,7 @@
     width: 15px;
     height: 15px;
 
-    background: url(/assets/img/video/dot.svg) no-repeat;
+    background: url(/assets/img/video/dot.png) no-repeat;
     background-position: 0px;
     background-size: 100%;
 
@@ -176,7 +172,7 @@
     width: 38px;
     height: 31px;
 
-    background: url(/assets/img/video/volume.svg) no-repeat;
+    background: url(/assets/img/video/volume.png) no-repeat;
     background-position: 0px;
     background-size: 100%;
 
@@ -191,13 +187,11 @@
 
     background: linear-gradient(90deg, rgb(113, 7, 7) 38%, rgb(196, 196, 196) 1%);
 
-    cursor: pointer;
-
 }
 
 .control_panel .volume_block .volume_line .dot {
 
-    left: 36%;
+    left: 38%;
 
 }
 
@@ -219,7 +213,7 @@
     width: 35px;
     height: 35px;
 
-    background: url(/assets/img/video/fullscreen_on.svg) no-repeat;
+    background: url(/assets/img/video/fullscreen_on.png) no-repeat;
     background-position: 0px;
     background-size: 100%;
 
@@ -241,7 +235,7 @@
 
     cursor: pointer;
 
-    background-image: url(/assets/img/video/play.svg);
+    background-image: url(/assets/img/video/play.png);
     background-repeat: no-repeat;
     background-position: 0;
     background-size: 100%;
@@ -277,18 +271,20 @@
 
     margin-top: 40px;
 
+
     height: 254px;
 
     overflow: hidden;
+
+    transition: 1s;
 
 }
 
 .youtube_videos .first_page, .youtube_videos .second_page {
 
     margin-top: 0;
+
     overflow: visible;
-    
-    transition: 1s;
 
 }
 
@@ -308,6 +304,7 @@
     height: 100%;
 
     cursor: pointer;
+    
 }
 
 .youtube_play_button {
@@ -319,7 +316,7 @@
     bottom: 157px;
     left: 192px;
 
-    background-image: url(/assets/img/video/youtube_play.svg);
+    background-image: url(/assets/img/video/youtube_play.png);
     background-repeat: no-repeat;
     background-position: 0;
     background-size: 100%;
@@ -375,16 +372,14 @@
 }
 
 
-.dots {
-
-    display: none;
+.dots { 
 
     width: 4px;
     height: 18px;
 
     padding: 13px 0 0 0;
 
-    background-image: url(/assets/img/video/youtube_dots.svg);
+    background-image: url(/assets/img/video/youtube_dots.png);
     background-repeat: no-repeat;
     background-position: 0;
     background-size: 100%;
@@ -416,7 +411,7 @@
     width: 10px;
     height: 12px;
     
-    background-image: url(/assets/img/video/arrow.svg);
+    background-image: url(/assets/img/video/arrow.png);
     background-repeat: no-repeat;
     background-position: 0;
     background-size: 100%;
