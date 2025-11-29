@@ -2,51 +2,67 @@ const pages = document.querySelectorAll('.page');
 const exploreBlock = document.querySelector(".picture");
 const imageBefore = document.querySelector('.image_before');
 const slider = document.querySelector('.slider_block');
+const explore = document.querySelector('#explore');
 
 const sliderExploreObject = {
 
     positionPictureExploreBlock: exploreBlock.getBoundingClientRect().left,
+    
     maxDistanceForSlider: 700,
     minDistanceForSlider: -20,
-    maxDistanceForImage: 700,
+
+    maxDistanceForImage: 720,
     minDistanceForImage: 0,
 
 }
 
 const sliderExploreActive = (target) => {
 
-    let newPos = target.clientX - sliderExploreObject.positionPictureExploreBlock;
+    let cursorPos = target.clientX;
+    let positionBlockFromLeft = sliderExploreObject.positionPictureExploreBlock;
+    let newPos = cursorPos - positionBlockFromLeft;
 
-    slider.style = `left: ${newPos}px;`;
-    imageBefore.style = `width: ${newPos+20}px;`;
+    let maximumToLeftImage = sliderExploreObject.minDistanceForImage;
+    let maximumToRightImage = sliderExploreObject.maxDistanceForImage;
+
+    let maximumToLeftSlider = sliderExploreObject.minDistanceForSlider;
+    let maximumToRightSlider = sliderExploreObject.maxDistanceForSlider;
+
+    slider.style = `left: ${newPos-20}px;`;
+    imageBefore.style = `width: ${newPos}px;`;
     
-    if (newPos >= sliderExploreObject.maxDistanceForSlider) {
+    if (newPos > maximumToRightImage) {
 
-        slider.style = `left: ${sliderExploreObject.maxDistanceForSlider}px;`;
-        imageBefore.style = `width: ${sliderExploreObject.maxDistanceForImage}px;`;
+        slider.style = `left: ${maximumToRightSlider}px;`;
+        imageBefore.style = `width: ${maximumToRightImage}px;`;
 
     }
 
-    if (newPos <= sliderExploreObject.minDistanceForSlider) {
+    if (newPos < maximumToLeftImage) {
 
-        slider.style = `left: ${sliderExploreObject.minDistanceForSlider}px;`;
-        imageBefore.style = `width: ${sliderExploreObject.minDistanceForImage}px;`;
+        slider.style = `left: ${maximumToLeftSlider}px;`;
+        imageBefore.style = `width: ${maximumToLeftImage}px;`;
 
     }
 
 }
 
+const sliderHandle = () => {
+
+    exploreBlock.addEventListener('mousemove', sliderExploreActive);
+
+}
 
 const handleRemoveSliderExploreListener = () => {
 
-    exploreBlock.removeEventListener('mouseup', handleRemoveSliderExploreListener);
     exploreBlock.removeEventListener('mousemove', sliderExploreActive);
 
 }
 
-const handleSliderExplore = () => {
+slider.addEventListener('mousedown', sliderHandle)
+explore.addEventListener('mouseup', handleRemoveSliderExploreListener)
+exploreBlock.addEventListener('mouseup', handleRemoveSliderExploreListener);
 
-    exploreBlock.addEventListener('mouseup', handleRemoveSliderExploreListener);
-    exploreBlock.addEventListener('mousemove', sliderExploreActive);
 
-}
+
+slider.ondragstart = () => false // функция, чтобы точка не раздваивалась при перемещении

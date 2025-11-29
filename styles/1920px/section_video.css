@@ -263,7 +263,7 @@
 
 
 
-.youtube_videos {
+.youtube_videos, .youtube_videos .first_page, .youtube_videos .second_page {
 
     display: flex;
     flex-direction: row;
@@ -273,6 +273,18 @@
 
 
     height: 254px;
+
+    overflow: hidden;
+
+    transition: 1s;
+
+}
+
+.youtube_videos .first_page, .youtube_videos .second_page {
+
+    margin-top: 0;
+
+    overflow: visible;
 
 }
 
@@ -290,6 +302,9 @@
 
     width: 100%;
     height: 100%;
+
+    cursor: pointer;
+    
 }
 
 .youtube_play_button {
@@ -382,7 +397,7 @@
 .video_block .pages_wrapper {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     margin: 40px auto 0 auto;
 
