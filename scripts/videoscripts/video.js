@@ -150,8 +150,8 @@ youtubeVideos.forEach((element) => {
 
 // блок отвечающий за переключение слайдера
 
-arrowLeft.addEventListener('click', moveSlider)
-arrowRight.addEventListener('click', moveSlider)
+//arrowLeft.addEventListener('click', moveSlider)
+//arrowRight.addEventListener('click', moveSlider)
 
 
 export {videoInfoObject};
