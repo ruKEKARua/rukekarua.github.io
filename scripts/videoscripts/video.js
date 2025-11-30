@@ -140,18 +140,17 @@ window.addEventListener('keydown', (e) => {   /* отключение скрол
 
 // блок отвечает за переключение видео
 
-youtubeVideos.forEach((element) => {
-
-    element.addEventListener('click', changeMainVideo)
-
-})
+//youtubeVideos.forEach((element) => {
+//
+//    element.addEventListener('click', changeMainVideo)
+//
+//})
 
 
 
 // блок отвечающий за переключение слайдера
 
-//arrowLeft.addEventListener('click', moveSlider)
-//arrowRight.addEventListener('click', moveSlider)
-
+arrowLeft.addEventListener('click', moveSlider)
+arrowRight.addEventListener('click', moveSlider)
 
 export {videoInfoObject};
