@@ -27,7 +27,7 @@ const changeMainVideo = (event) => {
         parentID.querySelector('.video_name').textContent = videoInfoObject.videoTitle;
 
         
-        mainVideo.src = `..${targetURL}`;
+        mainVideo.src = targetURL;
         mainVideo.poster = targetPoster;
         mainVideo.id = targetID;
         videoInfoObject.videoTitle = videoName;
