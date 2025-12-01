@@ -1,3 +1,4 @@
+const WIDTH = window.innerWidth
 const burgerMenu = document.querySelector('.burder_svg');
 const burgerCloseButton = document.querySelector('.cross_svg');
 const navigation = document.querySelector('.navigation ');
@@ -35,8 +36,6 @@ const durationArray = {
     duration: 650,
 
 }
-
-const WIDTH = window.innerWidth
 
 const openBurger = () => {
 
