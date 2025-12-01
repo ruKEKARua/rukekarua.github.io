@@ -69,14 +69,37 @@
 
 }
 
+.slider_wrapper_welcome {
+
+    width: 745px;
+    height: 100%;
+    position: relative;
+    top: -1160px;
+    left: 400px;
+
+    z-index: 5;
+
+}
+
+.slider_welcome {
+
+    width: 745px;
+
+    background-size: 100% 100%;
+
+}
+
 
 .gradient_monalisa {
 
-    width: 775px;
-    height: 525px;
+    width: 100%;
+    height: 100%;
 
     top: 0px;
-    background-position: 74px 0;
+    
+    z-index: 8;
+
+    background-position: 200px 0;
 
 }
 
@@ -85,9 +108,9 @@
     width: 700px;
     height: 120px;
     
-    top: 55px;
+    top: -2032px;
 
-    margin-left: 300px;
+    margin-left: 304px;
 
 }
 

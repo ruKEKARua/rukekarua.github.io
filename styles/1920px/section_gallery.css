@@ -60,16 +60,24 @@
 
 }
 
+.art_image {
+
+    opacity: 1;
+
+}
+
 .gradient_art {
 
     display: block;
-    position: relative;
-    bottom: 1020px;
-    left: 578px;
-    z-index: 1;
+    position: absolute;
 
+    top: 5359px;
+    left: 577px;
+
+    z-index: 1;
+    
     width: 750px;
-    height: 1440px;
+    height: 1906px;
 
     background: #000000;
     background: linear-gradient(90deg,rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%);
