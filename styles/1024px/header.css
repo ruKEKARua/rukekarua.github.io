@@ -12,8 +12,6 @@ header .header_wrapper {
 
 header .navigation {
 
-    display: none;
-
     width: 400px;
     height: 475px;
 
@@ -25,6 +23,7 @@ header .navigation {
     
     background: linear-gradient(90deg,rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 0) 100%);
     
+    transform: translateX(-380px);
 
 }
 
