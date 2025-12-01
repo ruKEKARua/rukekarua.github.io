@@ -91,7 +91,7 @@
     height: 810px;
 
     background: #000000;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 23%);
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 30%);
     background-position: 440px;
 
     pointer-events: none;
