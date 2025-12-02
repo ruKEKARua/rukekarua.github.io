@@ -1,3 +1,5 @@
+const WIDTH = window.innerWidth;
+
 const artBlock1 = document.querySelector('.art_block_1');
 const artBlock2 = document.querySelector('.art_block_2');
 const artBlock3 = document.querySelector('.art_block_3');
@@ -65,8 +67,7 @@ const showImages = () => {
 
 let lastScrollTop = window.scrollY;
 window.addEventListener('scroll', (event) => {
-    console.log(window.scrollY)
-    
+
     let currentScrollTop = window.scrollY;
     
     if (currentScrollTop > lastScrollTop) {// Скролл идёт вниз
@@ -89,3 +90,87 @@ window.addEventListener('scroll', (event) => {
         }
 
 })
+
+
+if (WIDTH == 1024) {
+
+    const firstBlockImages = artBlock1.querySelectorAll('.art_image');
+    const secondBlockImages = artBlock2.querySelectorAll('.art_image');
+    const thirdBlockImages = artBlock3.querySelectorAll('.art_image');
+
+    firstBlockImages.forEach((element, index) => {
+
+        switch (index) {
+            case 0:
+                element.src = `/assets/img/galery/galery${1}.jpg`
+                break;
+        
+            case 1:
+                element.src = `/assets/img/galery/galery${2}.jpg`
+                break;
+
+            case 2:
+                element.src = `/assets/img/galery/galery${11}.jpg`
+                break;
+
+            case 3:
+                element.src = `/assets/img/galery/galery${5}.jpg`
+                break;
+
+            default:
+                break;
+        }
+
+    })
+
+    secondBlockImages.forEach((element, index) => {
+
+        switch (index) {
+            case 0:
+                element.src = `/assets/img/galery/galery${7}.jpg`
+                break;
+        
+            case 1:
+                
+                break;
+
+            case 2:
+                element.src = `/assets/img/galery/galery${13}.jpg`
+                break;
+
+            case 3:
+                element.src = `/assets/img/galery/galery${14}.jpg`
+                break;
+
+            default:
+                break;
+        }
+
+    })
+
+    thirdBlockImages.forEach((element, index) => {
+
+        switch (index) {
+            case 0:
+                element.src = `/assets/img/galery/galery${12}.jpg`
+                break;
+        
+            case 1:
+                element.src = `/assets/img/galery/galery${3}.jpg`
+                break;
+
+            case 2:
+                element.src = `/assets/img/galery/galery${4}.jpg`
+                break;
+
+            case 3:
+                element.src = `/assets/img/galery/galery${6}.jpg`
+                break;
+
+            default:
+                break;
+        }
+
+    })
+
+}
