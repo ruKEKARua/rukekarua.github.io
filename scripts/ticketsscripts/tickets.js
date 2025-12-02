@@ -31,6 +31,16 @@ const minusButtonBasicModal = applicantFormModal.querySelector('#ticketButtonMin
 const plusButtonSeniorModal = applicantFormModal.querySelector('#ticketButtonPlusSenior');
 const minusButtonSeniorModal = applicantFormModal.querySelector('#ticketButtonMinusSenior');
 
+const counterBasic = applicantFormModal.querySelector('#inputBookingCountBasic');
+const counterSenior = applicantFormModal.querySelector('#inputBookingCountSenior');
+
+const basicTicketCounterOverview = applicantFormModal.querySelector('.basic_ticket').querySelector('p');
+const seniorTicketCounterOverview = applicantFormModal.querySelector('.senior_ticket').querySelector('p');
+
+const basicValue = applicantFormModal.querySelector('.basic_total_price');
+const seniorValue = applicantFormModal.querySelector('.senior_total_price');
+const totalPrice = applicantFormModal.querySelector('#total_price');
+
 const closeModalButton = document.querySelector('.close_button');
 
 const formElements = (formNode) => {
@@ -43,13 +53,23 @@ const handleFormSubmit = (event) => {
     
     event.preventDefault()
     const formArray = Array.from(formElements(applicantForm).entries())
+    
+    counterBasic.value = formArray[1][1];
+    counterSenior.value = formArray[2][1];
+    basicTicketCounterOverview.textContent = formArray[1][1];
+    seniorTicketCounterOverview.textContent = formArray[2][1];
 
+    basicValue.textContent = Number(counterBasic.value) * 20;
+    seniorValue.textContent = Number(counterSenior.value) * 10;
+    
+    totalPrice.textContent = Number(basicValue.textContent) + Number(seniorValue.textContent)
+    
+    
     sectionWrapper.style.display = 'none';
     modalWindow.style.display = 'block';
-    console.log(formArray)
+
 
 }
-
 
 applicantForm.addEventListener('submit', handleFormSubmit)
 
@@ -66,3 +86,4 @@ plusButtonSeniorModal.addEventListener('click', handleCountSeniorPlusModal);
 minusButtonSeniorModal.addEventListener('click', handleCountSeniorMinusModal);
 
 closeModalButton.addEventListener('click', closeModal);
+

@@ -1,16 +1,16 @@
-const applicantForm = document.querySelector('.modal_wrapper');
+const applicantFormModal = document.querySelector('.modal_wrapper');
 const sectionWrapper = document.querySelector('.tickets_wrapper');
 const modalWindow = document.querySelector('.booking_modal');
 
-const counterBasic = applicantForm.querySelector('#inputBookingCountBasic');
-const counterSenior = applicantForm.querySelector('#inputBookingCountSenior');
+const counterBasic = applicantFormModal.querySelector('#inputBookingCountBasic');
+const counterSenior = applicantFormModal.querySelector('#inputBookingCountSenior');
 
-const basicTicketCounterOverview = document.querySelector('.basic_ticket').querySelector('p');
-const seniorTicketCounterOverview = document.querySelector('.senior_ticket').querySelector('p');
+const basicTicketCounterOverview = applicantFormModal.querySelector('.basic_ticket').querySelector('p');
+const seniorTicketCounterOverview = applicantFormModal.querySelector('.senior_ticket').querySelector('p');
 
-const basicValue = document.querySelector('.basic_total_price');
-const seniorValue = document.querySelector('.senior_total_price');
-const totalPrice = document.querySelector('#total_price');
+const basicValue = applicantFormModal.querySelector('.basic_total_price');
+const seniorValue = applicantFormModal.querySelector('.senior_total_price');
+const totalPrice = applicantFormModal.querySelector('#total_price');
 
 const closeModal = () => {
 
