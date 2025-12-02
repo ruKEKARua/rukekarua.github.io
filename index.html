@@ -710,7 +710,7 @@
 
                     <h2>Buy Tickets</h2>
 
-                    <form action="rukekarua.github.io" class="block">
+                    <form action="rukekarua.github.io" class="block" id="formTickets">
 
                         <div class="image"></div>
 
@@ -719,9 +719,9 @@
                             <p>Ticket Type</p>
 
                             <div class="inputs">
-                                <label><input type="radio" name="radio" checked>Permanent exhibition</label>
-                                <label><input type="radio" name="radio">Temporary exhibition</label>
-                                <label><input type="radio" name="radio">Combined Admission</label>
+                                <label><input type="radio" name="Permanent exhibition" id="radioButton1" checked>Permanent exhibition</label>
+                                <label><input type="radio" name="Temporary exhibition" id="radioButton2">Temporary exhibition</label>
+                                <label><input type="radio" name="Combined Admission" id="radioButton3">Combined Admission</label>
                             </div>
 
                         </div>
@@ -739,9 +739,9 @@
 
                                     <div class="count_button">
 
-                                        <div class="change_button"><input type="button" value="–" id="minus_button_basic" class="roboto-normal"></div>
-                                        <div class="counter roboto-normal"><input type="number" value="1" name="count_basic" class="roboto-normal"></div>
-                                        <div class="change_button"><input type="button" value="+" id="plus_button_basic" class="roboto-normal"></div>
+                                        <div class="change_button"><input type="button" value="–" id="minusButtonBasic" name="minus_button_basic" class="roboto-normal"></div>
+                                        <div class="counter roboto-normal"><input type="number" value="1" id="counterBasic" name="count_basic" class="roboto-normal"></div>
+                                        <div class="change_button"><input type="button" value="+" id="plusButtonBasic" name="plus_button_basic" class="roboto-normal"></div>
 
                                     </div>
 
@@ -753,9 +753,9 @@
 
                                     <div class="count_button">
 
-                                        <div class="change_button"><input type="button" value="–"  id="minus_button_senior" class="roboto-normal"></div>
-                                        <div class="counter roboto-normal"><input type="number" value="1" name="count_senior" class="roboto-normal"></div>
-                                        <div class="change_button"><input type="button" value="+" id="plus_button_senior" class="roboto-normal"></div>
+                                        <div class="change_button"><input type="button" value="–"  id="minusButtonSenior" name="minus_button_senior" class="roboto-normal"></div>
+                                        <div class="counter roboto-normal"><input type="number" value="1" id="counterSenior" name="count_senior" class="roboto-normal"></div>
+                                        <div class="change_button"><input type="button" value="+" id="plusButtonSenior" name="minus_button_senior" class="roboto-normal"></div>
 
                                     </div>
 
@@ -767,7 +767,7 @@
 
                                 </div>
 
-                                <input type="submit" value="Buy Now" class="submit_button_block roboto">
+                                <input type="submit" value="Buy Now" id="submitTicket" name="submit_ticket" class="submit_button_block roboto">
 
                             </div>
 
@@ -1349,6 +1349,7 @@
     <script src="/scripts/videoscripts/video.js" type="module"></script>
     <script src="/scripts/gallery.js" type="module"></script>
     <script src="/scripts/burgerMenu.js" type="module"></script>
+    <script src="/scripts/tickets.js" type="module"></script>
 
 </body>
 </html>
