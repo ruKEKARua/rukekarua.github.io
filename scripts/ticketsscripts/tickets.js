@@ -19,17 +19,17 @@ const applicantFormModal = document.querySelector('.modal_wrapper');
 const sectionWrapper = document.querySelector('.tickets_wrapper');
 const modalWindow = document.querySelector('.booking_modal');
 
-const plusButtonBasic = applicantForm.querySelector('#plusButtonBasic')
-const minusButtonBasic = applicantForm.querySelector('#minusButtonBasic')
+const plusButtonBasic = applicantForm.querySelector('#plusButtonBasic');
+const minusButtonBasic = applicantForm.querySelector('#minusButtonBasic');
 
-const plusButtonSenior = applicantForm.querySelector('#plusButtonSenior')
-const minusButtonSenior = applicantForm.querySelector('#minusButtonSenior')
+const plusButtonSenior = applicantForm.querySelector('#plusButtonSenior');
+const minusButtonSenior = applicantForm.querySelector('#minusButtonSenior');
 
-const plusButtonBasicModal = applicantFormModal.querySelector('#ticketButtonPlusBasic')
-const minusButtonBasicModal = applicantFormModal.querySelector('#ticketButtonMinusBasic')
+const plusButtonBasicModal = applicantFormModal.querySelector('#ticketButtonPlusBasic');
+const minusButtonBasicModal = applicantFormModal.querySelector('#ticketButtonMinusBasic');
 
-const plusButtonSeniorModal = applicantFormModal.querySelector('#ticketButtonPlusSenior')
-const minusButtonSeniorModal = applicantFormModal.querySelector('#ticketButtonMinusSenior')
+const plusButtonSeniorModal = applicantFormModal.querySelector('#ticketButtonPlusSenior');
+const minusButtonSeniorModal = applicantFormModal.querySelector('#ticketButtonMinusSenior');
 
 const closeModalButton = document.querySelector('.close_button');
 
