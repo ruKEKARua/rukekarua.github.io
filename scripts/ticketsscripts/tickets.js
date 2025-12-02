@@ -41,6 +41,8 @@ const basicValue = applicantFormModal.querySelector('.basic_total_price');
 const seniorValue = applicantFormModal.querySelector('.senior_total_price');
 const totalPrice = applicantFormModal.querySelector('#total_price');
 
+const ticketValue = applicantFormModal.querySelector('.ticket_value').querySelector('p');
+
 const closeModalButton = document.querySelector('.close_button');
 
 const formElements = (formNode) => {
@@ -52,17 +54,28 @@ const formElements = (formNode) => {
 const handleFormSubmit = (event) => {
     
     event.preventDefault()
+    
     const formArray = Array.from(formElements(applicantForm).entries())
     
-    counterBasic.value = formArray[1][1];
-    counterSenior.value = formArray[2][1];
-    basicTicketCounterOverview.textContent = formArray[1][1];
-    seniorTicketCounterOverview.textContent = formArray[2][1];
+    const ticketEntry = formArray.find(entry => entry[0] === 'ticketType');
+    const valueBasicTickets = formArray[1][1];
+    const valueSeniorTickets = formArray[2][1];
+
+    
+    console.log(formArray)
+    
+    counterBasic.value = valueBasicTickets;
+    counterSenior.value = valueSeniorTickets;
+    basicTicketCounterOverview.textContent = valueBasicTickets;
+    seniorTicketCounterOverview.textContent = valueSeniorTickets;
 
     basicValue.textContent = Number(counterBasic.value) * 20;
     seniorValue.textContent = Number(counterSenior.value) * 10;
     
     totalPrice.textContent = Number(basicValue.textContent) + Number(seniorValue.textContent)
+
+
+    ticketValue.textContent = ticketEntry[1];
     
     
     sectionWrapper.style.display = 'none';
