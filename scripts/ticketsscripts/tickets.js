@@ -1,3 +1,11 @@
+import { 
+    handleCountBasicPlus,
+    handleCountBasicMinus,
+    handleCountSeniorPlus,
+    handleCountSeniorMinus 
+} from "./counterButtons.js";
+import { closeModal } from "./modalWindow.js";
+
 const applicantForm = document.querySelector('#formTickets');
 const sectionWrapper = document.querySelector('.tickets_wrapper');
 const modalWindow = document.querySelector('.booking_modal');
@@ -6,9 +14,6 @@ const plusButtonBasic = applicantForm.querySelector('#plusButtonBasic')
 const minusButtonBasic = applicantForm.querySelector('#minusButtonBasic')
 const plusButtonSenior = applicantForm.querySelector('#plusButtonSenior')
 const minusButtonSenior = applicantForm.querySelector('#minusButtonSenior')
-
-const counterBasic = applicantForm.querySelector('#counterBasic');
-const counterSenior = applicantForm.querySelector('#counterSenior');
 
 const closeModalButton = document.querySelector('.close_button');
 
@@ -29,44 +34,6 @@ const handleFormSubmit = (event) => {
 
 }
 
-const closeModal = () => {
-
-    sectionWrapper.style.display = 'block';
-    modalWindow.style.display = 'none';
-
-}
-
-const handleCountBasicPlus = () => {
-
-    counterBasic.value = Number(counterBasic.value) + 1;
-
-};
-
-const handleCountBasicMinus = () => {
-
-    if (Number(counterBasic.value) - 1 >= 0) {
-
-        counterBasic.value = Number(counterBasic.value) - 1;
-
-    }
-
-};
-
-const handleCountSeniorPlus = () => {
-
-    counterSenior.value = Number(counterSenior.value) + 1;
-
-};
-
-const handleCountSeniorMinus = () => {
-
-    if (Number(counterSenior.value) - 1 >= 0) {
-
-        counterSenior.value = Number(counterSenior.value) - 1;
-
-    }
-
-};
 
 applicantForm.addEventListener('submit', handleFormSubmit)
 
