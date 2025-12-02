@@ -1,4 +1,6 @@
 const applicantForm = document.querySelector('#formTickets');
+const sectionWrapper = document.querySelector('.tickets_wrapper');
+const modalWindow = document.querySelector('.booking_modal');
 
 const plusButtonBasic = applicantForm.querySelector('#plusButtonBasic')
 const minusButtonBasic = applicantForm.querySelector('#minusButtonBasic')
@@ -8,6 +10,8 @@ const minusButtonSenior = applicantForm.querySelector('#minusButtonSenior')
 const counterBasic = applicantForm.querySelector('#counterBasic');
 const counterSenior = applicantForm.querySelector('#counterSenior');
 
+const closeModalButton = document.querySelector('.close_button');
+
 const formElements = (formNode) => {
 
     return new FormData(formNode)
@@ -15,11 +19,20 @@ const formElements = (formNode) => {
 }
 
 const handleFormSubmit = (event) => {
-
+    
     event.preventDefault()
     const formArray = Array.from(formElements(applicantForm).entries())
 
+    sectionWrapper.style.display = 'none';
+    modalWindow.style.display = 'block';
     console.log(formArray)
+
+}
+
+const closeModal = () => {
+
+    sectionWrapper.style.display = 'block';
+    modalWindow.style.display = 'none';
 
 }
 
@@ -63,3 +76,5 @@ minusButtonBasic.addEventListener('click', handleCountBasicMinus)
 
 plusButtonSenior.addEventListener('click', handleCountSeniorPlus)
 minusButtonSenior.addEventListener('click', handleCountSeniorMinus)
+
+closeModalButton.addEventListener('click', closeModal)

@@ -6,7 +6,7 @@
     height: 845px;
 
     position: relative;
-    bottom: 818px;
+
     z-index: 9999;
 
     background-color: white;
@@ -766,5 +766,7 @@
     position: relative;
     top: -723px;
     left: 710px;
+
+    cursor: pointer;
 
 }
