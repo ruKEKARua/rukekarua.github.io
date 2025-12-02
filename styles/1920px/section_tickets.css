@@ -16,6 +16,8 @@
 
 .tickets_wrapper {
 
+    display: none;
+
     width: 1440px;
     height: 100%;
 
