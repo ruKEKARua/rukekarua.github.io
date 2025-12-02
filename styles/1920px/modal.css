@@ -125,7 +125,7 @@ input, button {
 
 }
 
-.left_block .block_inputs label {
+.left_block .block_inputs label, .date, .time {
 
     height: 43px;
 
@@ -151,6 +151,9 @@ input, button {
 
 .date, .time {
 
+    display: flex;
+    justify-content: space-evenly;
+
     width: 190px;
     padding: 0;
 
@@ -160,6 +163,13 @@ input, button {
 
     width: 111px;
     
+}
+
+.arrow_bottom, .calendar_svg, .clock_svg {
+
+    position: relative;
+    top: 11px;
+
 }
 
 .left_block .block_inputs .other_inputs {
@@ -296,14 +306,14 @@ input, button {
 
 }
 
-#ticketButtonMinus svg {
+.ticketButtonMinus svg {
 
     position: relative;
     top: -4px;
 
 }
 
-#ticketButtonPlus svg {
+.ticketButtonPlus svg {
 
     position: relative;
     top: -2px;
