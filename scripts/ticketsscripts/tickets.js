@@ -4,20 +4,21 @@ import {
     handleCountSeniorPlus,
     handleCountSeniorMinus 
 } from "./counterButtons.js";
+import { handleFormSubmit } from "./formNode.js";
 import { 
     closeModal, 
     handleCountBasicPlusModal,
     handleCountBasicMinusModal,
     handleCountSeniorPlusModal,
-    handleCountSeniorMinusModal
-
+    handleCountSeniorMinusModal,
+    changeTime,
+    changeDate,
+    showPickerDate,
+    showPickerTime,
 } from "./modalWindow.js";
 
 const applicantForm = document.querySelector('#formTickets');
 const applicantFormModal = document.querySelector('.modal_wrapper');
-
-const sectionWrapper = document.querySelector('.tickets_wrapper');
-const modalWindow = document.querySelector('.booking_modal');
 
 const plusButtonBasic = applicantForm.querySelector('#plusButtonBasic');
 const minusButtonBasic = applicantForm.querySelector('#minusButtonBasic');
@@ -31,70 +32,14 @@ const minusButtonBasicModal = applicantFormModal.querySelector('#ticketButtonMin
 const plusButtonSeniorModal = applicantFormModal.querySelector('#ticketButtonPlusSenior');
 const minusButtonSeniorModal = applicantFormModal.querySelector('#ticketButtonMinusSenior');
 
-const counterBasic = applicantFormModal.querySelector('#inputBookingCountBasic');
-const counterSenior = applicantFormModal.querySelector('#inputBookingCountSenior');
+const timeValueInput = applicantFormModal.querySelector('#input_time');
+const dateValueInput = applicantFormModal.querySelector('#input_date');
 
-const basicTicketCounterOverview = applicantFormModal.querySelector('.basic_ticket').querySelector('p');
-const seniorTicketCounterOverview = applicantFormModal.querySelector('.senior_ticket').querySelector('p');
-
-const basicValue = applicantFormModal.querySelector('.basic_total_price');
-const seniorValue = applicantFormModal.querySelector('.senior_total_price');
-const totalPrice = applicantFormModal.querySelector('#total_price');
-
-const ticketTipesBooking = applicantFormModal.querySelector('.type_selector').querySelectorAll('option');
-
-const ticketValue = applicantFormModal.querySelector('.ticket_value').querySelector('p');
+const dateArrowButton = document.querySelector('#arrowBottomDate');
+const timeArrowButton = document.querySelector('#arrowBottomTime');
 
 const closeModalButton = document.querySelector('.close_button');
 
-const formElements = (formNode) => {
-
-    return new FormData(formNode)
-
-}
-
-const handleFormSubmit = (event) => {
-    
-    event.preventDefault()
-    
-    const formArray = Array.from(formElements(applicantForm).entries())
-    
-    const ticketEntry = formArray.find(entry => entry[0] === 'ticketType');
-    const valueBasicTickets = formArray[1][1];
-    const valueSeniorTickets = formArray[2][1];
-    const ticketType = ticketEntry[1];
-
-    
-    console.log(formArray)
-    
-    counterBasic.value = valueBasicTickets;
-    counterSenior.value = valueSeniorTickets;
-    basicTicketCounterOverview.textContent = valueBasicTickets;
-    seniorTicketCounterOverview.textContent = valueSeniorTickets;
-
-    basicValue.textContent = Number(counterBasic.value) * 20;
-    seniorValue.textContent = Number(counterSenior.value) * 10;
-    
-    totalPrice.textContent = Number(basicValue.textContent) + Number(seniorValue.textContent)
-
-
-    ticketValue.textContent = ticketType;
-    
-    ticketTipesBooking.forEach((element) => {
-
-        if (element.value == ticketType) {
-
-            element.setAttribute('selected', '')
-
-        }
-
-    })
-    
-    sectionWrapper.style.display = 'none';
-    modalWindow.style.display = 'block';
-
-
-}
 
 applicantForm.addEventListener('submit', handleFormSubmit)
 
@@ -109,6 +54,12 @@ plusButtonBasicModal.addEventListener('click', handleCountBasicPlusModal);
 minusButtonBasicModal.addEventListener('click', handleCountBasicMinusModal);
 plusButtonSeniorModal.addEventListener('click', handleCountSeniorPlusModal);
 minusButtonSeniorModal.addEventListener('click', handleCountSeniorMinusModal);
+
+timeValueInput.addEventListener('input', changeTime)
+dateValueInput.addEventListener('input', changeDate)
+
+dateArrowButton.addEventListener('click', showPickerDate)
+timeArrowButton.addEventListener('click', showPickerTime)
 
 closeModalButton.addEventListener('click', closeModal);
 

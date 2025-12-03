@@ -71,7 +71,7 @@ const handleCountSeniorMinusModal = () => {
 
 const changeTime = () => {
 
-    const timeValue = applicantFormModal.querySelector('.time_value').querySelector('p')
+    const timeValue = applicantFormModal.querySelector('.time_value').querySelector('p');
 
     timeValue.textContent = timeValueInput.value;
 
@@ -79,15 +79,23 @@ const changeTime = () => {
 
 const changeDate = () => {
 
-    const dateValue = applicantFormModal.querySelector('.date_value').querySelector('p')
+    const dateValue = applicantFormModal.querySelector('.date_value').querySelector('p');
 
     dateValue.textContent = dateValueInput.value;
 
 };
 
-timeValueInput.addEventListener('input', changeTime)
-dateValueInput.addEventListener('input', changeDate)
+const showPickerDate = () => {
 
+    dateValueInput.showPicker();
+
+}
+
+const showPickerTime = () => {
+
+    timeValueInput.showPicker();
+
+}
 
 export { 
 
@@ -95,6 +103,10 @@ export {
     handleCountBasicPlusModal,
     handleCountBasicMinusModal,
     handleCountSeniorPlusModal,
-    handleCountSeniorMinusModal
+    handleCountSeniorMinusModal,
+    changeTime,
+    changeDate,
+    showPickerDate,
+    showPickerTime
 
 }

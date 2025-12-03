@@ -164,6 +164,47 @@ input, button {
     width: 111px;
     
 }
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+input[type="date"]:not(:valid):before,
+input[type="date"]:empty:before {
+    content: "Date";
+    color: black;
+    margin-right: 5px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+input[type="time"]:not(:valid):before,
+input[type="time"]:empty:before {
+    content: "Time";
+    color: black;
+    margin-right: 5px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+input[type="time"]::-webkit-datetime-edit-ampm-field,
+input[type="time"]::-webkit-datetime-edit-hour-field,
+input[type="time"]::-webkit-datetime-edit-minute-field,
+input[type="time"]::-webkit-datetime-edit-second-field,
+input[type="time"]::-webkit-datetime-edit-millisecond-field {
+
+    position: relative;
+}
+
+input[type="time"]::-webkit-datetime-edit-text {
+
+    display: none;
+}
+
+input[type="time"]::-webkit-datetime-edit-hour-field:after,
+input[type="time"]::-webkit-datetime-edit-minute-field:before {
+    content: '';
+}
 
 .arrow_bottom, .calendar_svg, .clock_svg {
 
@@ -190,10 +231,12 @@ input, button {
 
 .type_selector {
 
-    width: 330px;
-    height: 45px;
+    width: 360px;
+    height: 43px;
 
-    background: transparent;
+    background: white no-repeat;
+    background-image: url(/assets/img/ticket/arrow.png);
+    background-position: 340px 13px;
     border: none;
 
     font-weight: 400;
@@ -207,7 +250,13 @@ input, button {
     -webkit-appearance: none;
     -moz-appearance: none;
 
-    opacity: 0.6;
+}
+
+.arrow_ticket_type {
+
+    position: absolute;
+    top: 478px;
+    left: 373px;
 
 }
 
