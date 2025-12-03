@@ -12,6 +12,9 @@ const basicValue = applicantFormModal.querySelector('.basic_total_price');
 const seniorValue = applicantFormModal.querySelector('.senior_total_price');
 const totalPrice = applicantFormModal.querySelector('#total_price');
 
+const timeValueInput = applicantFormModal.querySelector('#input_time');
+const dateValueInput = applicantFormModal.querySelector('#input_date');
+
 const closeModal = () => {
 
     sectionWrapper.style.display = 'block';
@@ -65,6 +68,26 @@ const handleCountSeniorMinusModal = () => {
     }
 
 };
+
+const changeTime = () => {
+
+    const timeValue = applicantFormModal.querySelector('.time_value').querySelector('p')
+
+    timeValue.textContent = timeValueInput.value;
+
+};
+
+const changeDate = () => {
+
+    const dateValue = applicantFormModal.querySelector('.date_value').querySelector('p')
+
+    dateValue.textContent = dateValueInput.value;
+
+};
+
+timeValueInput.addEventListener('input', changeTime)
+dateValueInput.addEventListener('input', changeDate)
+
 
 export { 
 
