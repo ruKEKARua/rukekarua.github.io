@@ -13,64 +13,74 @@ const newTime = 0.50;
 const newPlayback = 0.25;
 
 const keybindingsHandler = (event) => {
+
+    if (document.activeElement == mainVideo) {
     
-    if (event.shiftKey && event.code == 'Comma') { 
-    
-        updateControlPanel('slower', -newPlayback)
+        if (event.shiftKey && event.code == 'Comma') { 
         
-    }
-    
-    if (event.shiftKey && event.code == 'Period') { 
+            updateControlPanel('slower', -newPlayback)
+
+        }
+
+        if (event.shiftKey && event.code == 'Period') { 
+
+            updateControlPanel('faster', newPlayback)
         
-        updateControlPanel('faster', newPlayback)
-    
-    }
+        }
 
-    switch (event.code) {
-        case "Space":
+        switch (event.code) {
+            
+            case "Space":
+            
+                event.preventDefault(); 
 
-            changeImageBigPlay()
+                changeImageBigPlay()
 
-            break;
+                break;
 
-        case "KeyM":
+            case "KeyM":
 
-            videoInfoObject.isVolumeOn == true ? volumeDisable(false) : volumeDisable(true)
+                videoInfoObject.isVolumeOn == true ? volumeDisable(false) : volumeDisable(true)
 
-            break;
+                break;
 
-        case "ArrowUp":
+            case "ArrowUp":
 
-            changeVolumeByArrows(newVolume)
+                event.preventDefault(); 
 
-            break;
+                changeVolumeByArrows(newVolume)
 
-        case "ArrowDown":
+                break;
 
-            changeVolumeByArrows(-newVolume)
+            case "ArrowDown":
 
-            break;
+                event.preventDefault(); 
 
-        case "ArrowLeft":
+                changeVolumeByArrows(-newVolume)
 
-            changeTimelineByArrows(-newTime)
+                break;
 
-            break;
+            case "ArrowLeft":
 
-        case "ArrowRight":
+                changeTimelineByArrows(-newTime)
 
-            changeTimelineByArrows(newTime)
+                break;
 
-            break;
+            case "ArrowRight":
 
-        case "KeyF":
+                changeTimelineByArrows(newTime)
 
-            fullscreenHandler();
+                break;
 
-            break;
+            case "KeyF":
 
-        default:
-            break;
+                fullscreenHandler();
+
+                break;
+
+            default:
+                break;
+        }
     }
 
 }
