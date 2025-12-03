@@ -767,6 +767,8 @@ input[type="time"]::-webkit-datetime-edit-minute-field:before {
 
     display: flex;
 
+    max-width: 100px;
+
 }
 
 
