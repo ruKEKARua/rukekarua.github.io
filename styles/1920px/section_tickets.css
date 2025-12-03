@@ -16,6 +16,8 @@
 
 .tickets_wrapper {
 
+    display: block;
+
     width: 1440px;
     height: 100%;
 
@@ -321,6 +323,8 @@
     text-align: center;
     vertical-align: middle;
 
+    cursor: pointer;
+
 }
 
 
@@ -346,7 +350,7 @@
     background: no-repeat;
     background-image: url(/assets/img/parallax.jpg);
     background-size: 100%;
-    background-position: 0 -150px;
+    background-position: 0 -144px;
     background-attachment: fixed;
     
 }
